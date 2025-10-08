@@ -13,9 +13,9 @@
 
 		contacts: {
 			email: 'rivaiamin.id@gmail.com',
-			phone: '+62 8986 849 527',
+			// phone: '+62 8986 849 527',
 			location: 'Tangerang / Bogor, Indonesia',
-			linkedin: 'https://linkedin.com/in/rivaia min',
+			linkedin: 'https://linkedin.com/in/rivaiamin',
 			portfolio: 'https://rivaiamin.github.io'
 		},
 
@@ -27,16 +27,17 @@
 			'Laravel',
 			'GCP',
 			'GoLang',
-			'CodeIgniter',
 			'Python',
 			'VueJS',
+			'Svelte',
 			'NodeJS',
 			'DotNet',
 			'PostgreSQL',
 			'SQL Server',
 			'Docker',
+			'AlpineJS',
+			'CodeIgniter',
 			'AngularJS',
-			'AlpineJS'
 		],
 
 		skills: [
@@ -91,6 +92,15 @@
 					'Worked on Veripay, Visimedia and other products',
 					'Backend and frontend implementation and maintenance'
 				]
+			},
+			{
+				company: 'AIMSIS',
+				role: 'Fullstack Engineer',
+				period: 'Aug 2018 – Dec 2019',
+				bullets: [
+					'Worked on Veripay, Visimedia and other products',
+					'Backend and frontend implementation and maintenance'
+				]
 			}
 		],
 
@@ -128,7 +138,7 @@
 		name: cv.name,
 		jobTitle: cv.title,
 		email: cv.contacts.email,
-		telephone: cv.contacts.phone,
+		// telephone: cv.contacts.phone,
 		address: {
 			'@type': 'PostalAddress',
 			addressLocality: cv.contacts.location
@@ -161,9 +171,7 @@
 
 <svelte:head>
 	<title>{cv.name} - CV</title>
-	<script type="application/ld+json">
-      {JSON.stringify(jsonLd, null, 2)}
-	</script>
+	{@html `<script type="application/ld+json">${JSON.stringify(jsonLd, null, 2)}</script>`}
 	<style>
 		@page {
 			size: A4;
@@ -299,46 +307,46 @@
 						<h1 class="text-4xl font-bold text-gray-900 mb-2 tracking-tight">{cv.name}</h1>
 						<p class="text-xl text-blue-700 font-semibold mb-4">{cv.title}</p>
 						<div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 text-sm text-gray-700">
-							<div class="flex items-center gap-2">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="h-4 w-4 text-blue-600 flex-shrink-0"
-									fill="none"
-									viewBox="0 0 24 24"
-									stroke="currentColor"
-								>
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="2"
-										d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-									/>
-								</svg>
-								<a href={'mailto:' + cv.contacts.email} class="hover:text-blue-700 transition-colors"
-									>{cv.contacts.email}</a
-								>
-							</div>
-							<div class="flex items-center gap-2">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="h-4 w-4 text-blue-600 flex-shrink-0"
-									fill="none"
-									viewBox="0 0 24 24"
-									stroke="currentColor"
-								>
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="2"
-										d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-									/>
-								</svg>
-								<a
-									href={'tel:' + cv.contacts.phone.replace(/\s/g, '')}
-									class="hover:text-blue-700 transition-colors">{cv.contacts.phone}</a
-								>
-							</div>
-							<div class="flex items-center gap-2">
+						<div class="flex items-center gap-2">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="h-4 w-4 text-blue-600 flex-shrink-0"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+								/>
+							</svg>
+							<a href={'mailto:' + cv.contacts.email} class="hover:text-blue-700 transition-colors"
+								>{cv.contacts.email}</a
+							>
+						</div>
+						<!-- <div class="flex items-center gap-2">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="h-4 w-4 text-blue-600 flex-shrink-0"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+								/>
+							</svg>
+							<a
+								href={'tel:' + cv.contacts.phone.replace(/\s/g, '')}
+								class="hover:text-blue-700 transition-colors">{cv.contacts.phone}</a
+							>
+						</div> -->
+						<div class="flex items-center gap-2">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									class="h-4 w-4 text-blue-600 flex-shrink-0"
@@ -530,13 +538,13 @@
 							>{cv.contacts.email}</a
 						>
 					</div>
-					<div class="flex items-center gap-2">
+					<!-- <div class="flex items-center gap-2">
 						<span class="font-semibold text-gray-900">Phone:</span>
 						<a
 							href={'tel:' + cv.contacts.phone.replace(/\s/g, '')}
 							class="text-blue-700 hover:underline">{cv.contacts.phone}</a
 						>
-					</div>
+					</div> -->
 					<div class="flex items-center gap-2">
 						<span class="font-semibold text-gray-900">LinkedIn:</span>
 						<a
