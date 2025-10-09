@@ -4,19 +4,14 @@
 		name: "Riva'i Amin",
 		title: 'Fullstack Engineer',
 		photo: '/rivaiamin_photo.jpg',
-		summary: `A fullstack web engineer who began his career in 2010. I possess experience and feel well-suited
-      for involvement in the entire system development cycle, commencing with problem identification,
-      elaborating detailed requirements, crafting cost-effective solutions, coordinating development efforts,
-      and delivering the final product to users. I've worked with a diverse range of products and catered to
-      varying client needs, from academic systems to financial solutions. I'm confident I can adapt quickly and
-      tackle a wide array of challenges.`,
+		summary: `I'm a full-stack engineer with a long journey working across various technologies and roles. Over time, I've grown from building and solving technical challenges to leading teams and managing projects. Recently, my focus has shifted toward using AI agents to help build better web applications. With my background in engineering and leadership, I aim to guide and support AI systems in their work—reviewing their output, assisting when they get stuck, and ensuring that both people and technology can work together effectively.`,
 
 		contacts: {
 			email: 'rivaiamin.id@gmail.com',
 			// phone: '+62 8986 849 527',
 			location: 'Tangerang / Bogor, Indonesia',
 			linkedin: 'https://linkedin.com/in/rivaiamin',
-			portfolio: 'https://rivaiamin.github.io'
+			portfolio: 'https://rivaiamin.github.io',
 		},
 
 		techStacks: [
@@ -79,9 +74,16 @@
 				period: 'Jan 2020 – Aug 2023',
 				bullets: [
 					'Monitor and maintain code for various products',
-					'Lead & assist dev team coordination',
-					'Plan sprints, review code, deploy and deliver products',
-					'Perform server maintenance and troubleshooting'
+					'Lead and assist dev team coordination',
+					'Coordinate with product team for development',
+					'Manage and delegate tasks effectively',
+					'Plan sprints for optimal workflow',
+					'Review and inspect code for quality',
+					'Build, deploy, and deliver products',
+					'Perform server maintenance and troubleshooting',
+					'Develop core features',
+					'Ensure team synchronization',
+					'Handle emergency tasks'
 				]
 			},
 			{
@@ -89,30 +91,75 @@
 				role: 'Fullstack Engineer',
 				period: 'Aug 2018 – Dec 2019',
 				bullets: [
-					'Worked on Veripay, Visimedia and other products',
-					'Backend and frontend implementation and maintenance'
+					'Develop Feature and Fixing Bug at Academic LMS System',
+					'Build System Integration to Dapodik eRapor System',
+					'Develop Feature and Fixing Bug at Book Library Application',
+					'Develop Integration to Fingerprint Machine'
 				]
 			},
 			{
-				company: 'AIMSIS',
-				role: 'Fullstack Engineer',
-				period: 'Aug 2018 – Dec 2019',
+				company: 'Veripay',
+				role: 'Back-end Engineer',
+				period: 'Aug 2017 – Oct 2018',
 				bullets: [
-					'Worked on Veripay, Visimedia and other products',
-					'Backend and frontend implementation and maintenance'
+					'Build API to provide manage user, deposit, transaction, connect to biller, etc. using Lumen Framework.',
+					'Integrate to Banking System',
+					'Integrate to PPOB Biller',
+					'Build Admin Dashboard to manage user, transaction, deposit, etc. using AngularJS and SemanticUI.'
+				]
+			},
+			{
+				company: 'KisiKisi.id',
+				role: 'Fullstack Engineer',
+				period: 'Mar 2016 – Sep 2016',
+				bullets: [
+					'Build School Directory application using Laravel and AngularJS',
+					'Build School Event application using Laravel and AngularJS',
+				]
+			},
+			{
+				company: 'Dinas Informatika Kota Tangerang',
+				role: 'Web Programmer (Internship)',
+				period: 'Jan 2014 – Feb 2014',
+				bullets: [
+					'Build enviromental permit application for Dinas Lingkungan Hidup using CodeIgniter & jQuery'
+				]
+			},
+			{
+				company: 'Visimedia',
+				role: 'Back-end Engineer',
+				period: 'Aug 2010 – Mar 2011',
+				bullets: [
+					'Build web application using PyroCMS, a CMS built with CodeIgniter',
+					'Design website layout using HTML and CSS'
 				]
 			}
 		],
 
 		projects: [
-			"Named Entity Recognition for Al-Qur'an Words – OpenNLP",
-			'Sentiment Analysis for Twitter about Indonesia Political Issue – OpenNLP',
-			'Social Cataloging System – Lumen PHP',
-			'e-Money System – Lumen PHP',
-			'Docx into Database Converter – Python',
-			'Payment Gateway Integration – Golang',
-			'School Payment System – VueJS & PHP',
-			'Multiple Web App – Laravel & FilamentPHP'
+			'Multiple Web App - FilamentPHP',
+			'Tenancy Website CMS - FilamentPHP',
+			'MLM Platform - FilamentPHP',
+			'Online Psychotest - Golang',
+			'Recruitment System - SvelteKit + Laravel',
+			'Resume Analyzer AI - Golang',
+			'Chat Consultation SPA - Laravel & VueJS',
+			'Technician Support System - Laravel',
+			'Multiple Image Classification Model - Python',
+			'Disaster Mitigation - Javascript & OpenStreetMap',
+			'School Admission System - VueJS & PHP',
+			'Named Entity Recognition for Al-Qur’an Words - OpenNLP',	
+			'Sentiment Analysis AI Model - OpenNLP',
+			'e-Money System - Lumen PHP',
+			'SekolahKita.net into MongoDB Data - Python',
+			'Docx into Database Converter - Python',
+			'Fingerprint Attendance Collector - Python',
+			'Library System - Golang & AngularJS',
+			'Payment Gateway Integration - Golang',
+			'School Payment System - VueJS & PHP',
+			'Docx Template Generator - Python',	
+			'Accounting System for LAZ - NodeJS & AngularJS',
+			'Social Cataloging System - Lumen PHP',
 		],
 
 		education: [
@@ -128,7 +175,66 @@
 			}
 		],
 
-		awards: ['LKS Web Design 2010 — Juara 1 Tingkat Provinsi Banten']
+	awards: [
+		'LKS Web Design 2009 — Juara 2 Tingkat Kota Tangerang',
+		'LKS Web Design 2010 — Juara 1 Tingkat Provinsi Banten',
+		'Regional Finalist Teras Mahasiswa 2015',
+	],
+
+	/* 
+	   OPTION 2 (Alternative): If you want to merge with awards, you can use this format instead:
+	   
+	   awards: [
+	       {
+	           type: 'award',
+	           title: 'LKS Web Design 2010',
+	           description: 'Juara 1 Tingkat Provinsi Banten'
+	       },
+	       {
+	           type: 'activity',
+	           organization: 'Tech Competition 2023',
+	           role: 'Judge & Trainer',
+	           period: 'March 2023',
+	           description: 'Judged programming competition and trained participants'
+	       }
+	   ]
+	   
+	   Then update the Awards section HTML to handle both types with conditional rendering.
+	*/
+
+	// Option 1: Separate section for one-time professional activities
+	otherActivities: [
+		{
+			organization: 'SMKN 56 Jakarta',
+			role: 'Guest Trainer',
+			period: '2016',
+			description: 'Teached web programming to representative student for LKS Web Design 2016'
+		},
+		{
+			organization: 'SMKN 7 Jakarta',
+			role: 'Guest Trainer',
+			period: '2016',
+			description: 'Teached web programming to representative student for LKS Web Design 2017'
+		},
+		{
+			organization: 'STMIK Insan Pembangunan',
+			role: 'Guest Trainer',
+			period: '2016',
+			description: 'Teached web programming to representative student from Aceh Province for LKS Web Design Nasional 2016'
+		},
+		{
+			organization: 'DitPSMK Jakarta',
+			role: 'Guest Judge',
+			period: '2016',
+			description: 'Judged web programming competition for LKS Web Design Jakarta 2016'
+		},
+		{
+			organization: 'DitPSMK Tangerang Selatan',
+			role: 'Guest Judge',
+			period: '2017',
+			description: 'Judged web programming competition for LKS Web Design Tangerang Selatan 2017'
+		}
+	]
 	};
 
 	// Create JSON-LD structured data for SEO/ATS parsing
@@ -508,21 +614,47 @@
 				</div>
 			</section>
 
-			<!-- Awards -->
-			<section class="mb-8 print-break">
-				<h2
-					class="text-xl font-bold text-gray-900 mb-4 pb-2 border-b-2 border-gray-300 uppercase tracking-wide"
-				>
-					Awards & Recognition
-				</h2>
-				<ul class="space-y-2">
-					{#each cv.awards as award}
-						<li class="text-gray-700 relative pl-5 before:content-['★'] before:absolute before:left-0 before:text-yellow-600 before:font-bold">
-							{award}
-						</li>
-					{/each}
-				</ul>
-			</section>
+		<!-- Other Professional Activities (Judge, Trainer, etc.) -->
+		<section class="mb-8 print-break">
+			<h2
+				class="text-xl font-bold text-gray-900 mb-4 pb-2 border-b-2 border-gray-300 uppercase tracking-wide"
+			>
+				Other Professional Activities
+			</h2>
+			<div class="space-y-4">
+				{#each cv.otherActivities as activity}
+					<div>
+						<div class="flex justify-between items-start mb-1">
+							<div class="flex-1">
+								<h3 class="text-lg font-bold text-gray-900">{activity.organization}</h3>
+								<p class="text-base text-blue-700 font-semibold">{activity.role}</p>
+							</div>
+							<span
+								class="text-sm text-gray-600 font-medium bg-gray-100 px-3 py-1 rounded-md whitespace-nowrap ml-4"
+								>{activity.period}</span
+							>
+						</div>
+						<p class="text-gray-700 leading-relaxed ml-0">{activity.description}</p>
+					</div>
+				{/each}
+			</div>
+		</section>
+
+		<!-- Awards -->
+		<section class="mb-8 print-break">
+			<h2
+				class="text-xl font-bold text-gray-900 mb-4 pb-2 border-b-2 border-gray-300 uppercase tracking-wide"
+			>
+				Awards & Recognition
+			</h2>
+			<ul class="space-y-2">
+				{#each cv.awards as award}
+					<li class="text-gray-700 relative pl-5 before:content-['★'] before:absolute before:left-0 before:text-yellow-600 before:font-bold">
+						{award}
+					</li>
+				{/each}
+			</ul>
+		</section>
 
 			<!-- Links -->
 			<section class="print-break">
@@ -531,7 +663,7 @@
 				>
 					Contact & Links
 				</h2>
-				<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-gray-700">
+				<div class="grid grid-cols-1 gap-3 text-gray-700">
 					<div class="flex items-center gap-2">
 						<span class="font-semibold text-gray-900">Email:</span>
 						<a href={'mailto:' + cv.contacts.email} class="text-blue-700 hover:underline"
