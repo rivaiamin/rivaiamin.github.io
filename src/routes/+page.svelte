@@ -236,7 +236,7 @@
 		<div class="space-y-6 text-center">
 			{#each links as link}
 				<button
-				onclick={() => goto('/cv')}
+				on:click={() => goto(link.href)}
 				class="menu-item block w-full text-white text-2xl md:text-3xl font-light tracking-wider px-8 py-2"
 				>
 					{link.label}
