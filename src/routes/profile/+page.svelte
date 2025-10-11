@@ -238,7 +238,7 @@
 		}
 
 		.hero-gradient {
-			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
 		}
 
 		.service-card {
@@ -255,14 +255,14 @@
 		}
 
 		.stat-number {
-			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 			background-clip: text;
 		}
 
 		.accent-bg {
-			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
 		}
 
 		.section-title::before {
@@ -272,7 +272,7 @@
 			left: 0;
 			width: 60px;
 			height: 3px;
-			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
 		}
 
 		.portfolio-card {
@@ -325,7 +325,7 @@
 			<a
 				href="/cv"
 				target="_blank"
-				class="inline-flex items-center px-8 py-4 bg-white text-purple-600 font-semibold rounded-full shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105"
+				class="inline-flex items-center px-8 py-4 bg-white text-blue-600 font-semibold rounded-full shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105"
 			>
 				<svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 					<path
@@ -387,7 +387,7 @@
 						<div class="flex flex-wrap gap-2">
 							{#each profile.values as value}
 								<span
-									class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium"
+									class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium"
 								>
 									{value}
 								</span>
@@ -397,12 +397,12 @@
 				</div>
 
 				<div class="fade-in-up">
-					<div class="bg-gradient-to-br from-purple-50 to-blue-50 p-8 rounded-2xl">
+					<div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl">
 						<h3 class="text-2xl font-semibold text-gray-900 mb-4">Educational Background</h3>
 						<div class="space-y-4">
 							<div>
 								<h4 class="text-lg font-medium text-gray-900">{profile.education.degree}</h4>
-								<p class="text-purple-600 font-medium">{profile.education.school}</p>
+								<p class="text-blue-600 font-medium">{profile.education.school}</p>
 								<p class="text-gray-600 text-sm mt-1">{profile.education.specialization}</p>
 								<p class="text-gray-500 text-xs mt-1">({profile.education.year})</p>
 							</div>
@@ -412,7 +412,7 @@
 						<div class="space-y-2">
 							{#each profile.awards.slice(0, 2) as award}
 								<div class="flex items-start">
-									<div class="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3"></div>
+									<div class="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3"></div>
 									<p class="text-sm text-gray-600">{award}</p>
 								</div>
 							{/each}
@@ -440,11 +440,11 @@
 						<h3 class="text-2xl font-semibold text-gray-900 mb-4">{service}</h3>
 						<p class="text-gray-600 mb-6 leading-relaxed">{details.description}</p>
 						<div class="flex flex-wrap gap-2">
-							{#each details.technologies as tech}
-								<span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">
-									{tech}
-								</span>
-							{/each}
+											{#each details.technologies as tech}
+												<span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">
+													{tech}
+												</span>
+											{/each}
 						</div>
 					</div>
 				{/each}
@@ -467,7 +467,7 @@
 						<div class="flex justify-between items-start mb-4">
 							<div>
 								<h3 class="text-2xl font-semibold text-gray-900">{portfolio.name}</h3>
-								<p class="text-purple-600 font-medium">{portfolio.period}</p>
+								<p class="text-blue-600 font-medium">{portfolio.period}</p>
 							</div>
 						</div>
 
@@ -497,13 +497,13 @@
 				<div class="space-y-8">
 					{#each Object.entries(profile.keyProjects) as [category, projects]}
 						<div>
-							<h4 class="text-xl font-semibold text-purple-600 mb-4">{category}</h4>
+							<h4 class="text-xl font-semibold text-blue-600 mb-4">{category}</h4>
 							<div class="grid md:grid-cols-2 gap-6">
 								{#each projects as project}
 									<div class="bg-white p-6 rounded-xl shadow border border-gray-100">
 										<div class="flex justify-between items-start mb-3">
 											<h5 class="font-semibold text-gray-900">{project.name}</h5>
-											<span class="px-2 py-1 bg-purple-100 text-purple-700 rounded text-xs">
+											<span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs">
 												{project.tech}
 											</span>
 										</div>
@@ -556,9 +556,9 @@
 			<div class="grid md:grid-cols-2 gap-8">
 				<div class="space-y-6">
 					<div class="flex items-center p-4 bg-gray-50 rounded-xl">
-						<div class="bg-purple-100 p-3 rounded-lg mr-4">
+						<div class="bg-blue-100 p-3 rounded-lg mr-4">
 							<svg
-								class="w-6 h-6 text-purple-600"
+								class="w-6 h-6 text-blue-600"
 								fill="none"
 								stroke="currentColor"
 								viewBox="0 0 24 24"
@@ -573,16 +573,16 @@
 						</div>
 						<div>
 							<h4 class="font-semibold text-gray-900">Email</h4>
-							<a href="mailto:{profile.contacts.email}" class="text-purple-600 hover:underline">
+							<a href="mailto:{profile.contacts.email}" class="text-blue-600 hover:underline">
 								{profile.contacts.email}
 							</a>
 						</div>
 					</div>
 
 					<div class="flex items-center p-4 bg-gray-50 rounded-xl">
-						<div class="bg-purple-100 p-3 rounded-lg mr-4">
+						<div class="bg-blue-100 p-3 rounded-lg mr-4">
 							<svg
-								class="w-6 h-6 text-purple-600"
+								class="w-6 h-6 text-blue-600"
 								fill="none"
 								stroke="currentColor"
 								viewBox="0 0 24 24"
@@ -599,7 +599,7 @@
 							<h4 class="font-semibold text-gray-900">Phone</h4>
 							<a
 								href="tel:{profile.contacts.phone.replace(/\s/g, '')}"
-								class="text-purple-600 hover:underline"
+								class="text-blue-600 hover:underline"
 							>
 								{profile.contacts.phone}
 							</a>
@@ -607,9 +607,9 @@
 					</div>
 
 					<div class="flex items-center p-4 bg-gray-50 rounded-xl">
-						<div class="bg-purple-100 p-3 rounded-lg mr-4">
+						<div class="bg-blue-100 p-3 rounded-lg mr-4">
 							<svg
-								class="w-6 h-6 text-purple-600"
+								class="w-6 h-6 text-blue-600"
 								fill="none"
 								stroke="currentColor"
 								viewBox="0 0 24 24"
@@ -637,8 +637,8 @@
 
 				<div class="space-y-6">
 					<div class="flex items-center p-4 bg-gray-50 rounded-xl">
-						<div class="bg-purple-100 p-3 rounded-lg mr-4">
-							<svg class="w-6 h-6 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
+						<div class="bg-blue-100 p-3 rounded-lg mr-4">
+							<svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
 								<path
 									d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764 1.75-1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
 								/>
@@ -650,7 +650,7 @@
 								href={profile.contacts.linkedin}
 								target="_blank"
 								rel="noopener"
-								class="text-purple-600 hover:underline break-all"
+								class="text-blue-600 hover:underline break-all"
 							>
 								linkedin.com/in/rivaiamin
 							</a>
@@ -658,9 +658,9 @@
 					</div>
 
 					<div class="flex items-center p-4 bg-gray-50 rounded-xl">
-						<div class="bg-purple-100 p-3 rounded-lg mr-4">
+						<div class="bg-blue-100 p-3 rounded-lg mr-4">
 							<svg
-								class="w-6 h-6 text-purple-600"
+								class="w-6 h-6 text-blue-600"
 								fill="none"
 								stroke="currentColor"
 								viewBox="0 0 24 24"
@@ -679,7 +679,7 @@
 								href={profile.contacts.portfolio}
 								target="_blank"
 								rel="noopener"
-								class="text-purple-600 hover:underline"
+								class="text-blue-600 hover:underline"
 							>
 								rivaiamin.github.io
 							</a>
