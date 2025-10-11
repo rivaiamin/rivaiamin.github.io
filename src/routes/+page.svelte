@@ -2,7 +2,8 @@
 	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
 
-	let particles: Array<{ x: number; y: number; size: number; duration: number; delay: number }> = [];
+	let particles: Array<{ x: number; y: number; size: number; duration: number; delay: number }> =
+		[];
 	let links: Array<{ href: string; label: string; icon: string }> = [];
 
 	onMount(() => {
@@ -53,9 +54,74 @@
 	});
 </script>
 
+<div class="fixed inset-0 bg-black overflow-hidden">
+	<!-- 3D Model Background -->
+	<div class="model-background">
+		<iframe
+			title="Lost Programmer Background"
+			allowfullscreen
+			allow="autoplay"
+			src="https://sketchfab.com/models/43d32e4f459f4857a054579da61bb3d6/embed?autospin=0.3&autostart=1&preload=1&ui_hide_controls=1&transparent=1&ui_theme=dark"
+		>
+		</iframe>
+	</div>
+
+	<!-- Vignette overlay -->
+	<div class="vignette"></div>
+
+	<!-- Floating particles -->
+	{#each particles as particle}
+		<div
+			class="particle"
+			style="left: {particle.x}%; top: {particle.y}%; width: {particle.size}px; height: {particle.size}px; animation-duration: {particle.duration}s; animation-delay: {particle.delay}s;"
+		></div>
+	{/each}
+
+	<!-- Main Menu Content -->
+	<div class="relative z-10 flex flex-col items-center justify-center min-h-screen p-4">
+		<!-- Game Title -->
+		<div class="text-center mb-16">
+			<h1 class="game-title text-6xl md:text-8xl font-bold text-white mb-4">RIVAI AMIN</h1>
+			<p class="text-blue-400 text-lg md:text-xl tracking-widest uppercase opacity-80">
+				Software Engineer • 3D Artist
+			</p>
+		</div>
+
+		<!-- Main Menu -->
+		<div class="space-y-6 text-center">
+			{#each links as link}
+				<button
+					on:click={() => goto(link.href)}
+					class="menu-item block w-full text-white text-2xl md:text-3xl font-light tracking-wider px-8 py-2"
+				>
+					{link.label}
+				</button>
+			{/each}
+		</div>
+
+		<!-- Social Icons (Bottom) -->
+		<div class="absolute bottom-6 md:bottom-8 left-0 right-0 flex justify-center gap-6 md:gap-8">
+			{#each links as link}
+				<a href={link.href} class="social-icon" aria-label={link.label} target="_blank">
+					{@html link.icon}
+				</a>
+			{/each}
+		</div>
+
+		<!-- Version/Copyright (Bottom Right) - Hidden on mobile -->
+		<div
+			class="version-text absolute bottom-20 md:bottom-8 left-1/2 md:left-auto -translate-x-1/2 md:translate-x-0 md:right-8 text-gray-600 text-xs tracking-wider text-center md:text-right"
+		>
+			<p>v1.0.0</p>
+			<p class="mt-1">© 2025 RIVAI AMIN</p>
+		</div>
+	</div>
+</div>
+
 <style>
 	@keyframes float {
-		0%, 100% {
+		0%,
+		100% {
 			transform: translateY(0) translateX(0);
 			opacity: 0.3;
 		}
@@ -66,15 +132,18 @@
 	}
 
 	@keyframes glowPulse {
-		0%, 100% {
-			text-shadow: 0 0 10px rgba(59, 130, 246, 0.5),
-						 0 0 20px rgba(59, 130, 246, 0.3),
-						 0 0 30px rgba(59, 130, 246, 0.1);
+		0%,
+		100% {
+			text-shadow:
+				0 0 10px rgba(59, 130, 246, 0.5),
+				0 0 20px rgba(59, 130, 246, 0.3),
+				0 0 30px rgba(59, 130, 246, 0.1);
 		}
 		50% {
-			text-shadow: 0 0 20px rgba(59, 130, 246, 0.8),
-						 0 0 30px rgba(59, 130, 246, 0.5),
-						 0 0 40px rgba(59, 130, 246, 0.3);
+			text-shadow:
+				0 0 20px rgba(59, 130, 246, 0.8),
+				0 0 30px rgba(59, 130, 246, 0.5),
+				0 0 40px rgba(59, 130, 246, 0.3);
 		}
 	}
 
@@ -99,7 +168,9 @@
 	}
 
 	.game-title {
-		animation: glowPulse 3s ease-in-out infinite, fadeIn 1s ease-out;
+		animation:
+			glowPulse 3s ease-in-out infinite,
+			fadeIn 1s ease-out;
 		font-family: 'Rajdhani', sans-serif;
 		font-weight: 700;
 		letter-spacing: 0.1em;
@@ -116,11 +187,21 @@
 		transition: all 0.3s ease;
 	}
 
-	.menu-item:nth-child(1) { animation-delay: 0.3s; }
-	.menu-item:nth-child(2) { animation-delay: 0.4s; }
-	.menu-item:nth-child(3) { animation-delay: 0.5s; }
-	.menu-item:nth-child(4) { animation-delay: 0.6s; }
-	.menu-item:nth-child(5) { animation-delay: 0.7s; }
+	.menu-item:nth-child(1) {
+		animation-delay: 0.3s;
+	}
+	.menu-item:nth-child(2) {
+		animation-delay: 0.4s;
+	}
+	.menu-item:nth-child(3) {
+		animation-delay: 0.5s;
+	}
+	.menu-item:nth-child(4) {
+		animation-delay: 0.6s;
+	}
+	.menu-item:nth-child(5) {
+		animation-delay: 0.7s;
+	}
 
 	.menu-item::before {
 		content: '▸';
@@ -196,72 +277,3 @@
 		animation-fill-mode: forwards;
 	}
 </style>
-
-<div class="fixed inset-0 bg-black overflow-hidden">
-	<!-- 3D Model Background -->
-	<div class="model-background">
-		<iframe 
-			title="Lost Programmer Background" 
-			allowfullscreen 
-			allow="autoplay" 
-			src="https://sketchfab.com/models/43d32e4f459f4857a054579da61bb3d6/embed?autospin=0.3&autostart=1&preload=1&ui_hide_controls=1&transparent=1&ui_theme=dark">
-		</iframe>
-	</div>
-
-	<!-- Vignette overlay -->
-	<div class="vignette"></div>
-
-	<!-- Floating particles -->
-	{#each particles as particle}
-		<div 
-			class="particle" 
-			style="left: {particle.x}%; top: {particle.y}%; width: {particle.size}px; height: {particle.size}px; animation-duration: {particle.duration}s; animation-delay: {particle.delay}s;"
-		></div>
-	{/each}
-
-	<!-- Main Menu Content -->
-	<div class="relative z-10 flex flex-col items-center justify-center min-h-screen p-4">
-		
-		<!-- Game Title -->
-		<div class="text-center mb-16">
-			<h1 class="game-title text-6xl md:text-8xl font-bold text-white mb-4">
-				RIVAI AMIN
-			</h1>
-			<p class="text-blue-400 text-lg md:text-xl tracking-widest uppercase opacity-80">
-				Software Engineer • 3D Artist
-			</p>
-		</div>
-
-		<!-- Main Menu -->
-		<div class="space-y-6 text-center">
-			{#each links as link}
-				<button
-				on:click={() => goto(link.href)}
-				class="menu-item block w-full text-white text-2xl md:text-3xl font-light tracking-wider px-8 py-2"
-				>
-					{link.label}
-				</button>
-			{/each}
-		</div>
-
-		<!-- Social Icons (Bottom) -->
-		<div class="absolute bottom-6 md:bottom-8 left-0 right-0 flex justify-center gap-6 md:gap-8">
-			{#each links as link}
-				<a 
-					href={link.href}
-					class="social-icon"
-					aria-label={link.label}
-					target="_blank"
-				>
-					{@html link.icon}
-				</a>
-			{/each}
-		</div>
-
-		<!-- Version/Copyright (Bottom Right) - Hidden on mobile -->
-		<div class="version-text absolute bottom-20 md:bottom-8 left-1/2 md:left-auto -translate-x-1/2 md:translate-x-0 md:right-8 text-gray-600 text-xs tracking-wider text-center md:text-right">
-			<p>v1.0.0</p>
-			<p class="mt-1">© 2025 RIVAI AMIN</p>
-		</div>
-	</div>
-</div>

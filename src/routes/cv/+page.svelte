@@ -14,59 +14,77 @@
 			portfolio: 'https://rivaiamin.github.io'
 		},
 
-	// Unified skills section grouped by category for better ATS parsing
-	technicalSkills: {
-		Backend: ['PHP', 'Golang', 'Node.js', 'Python', '.NET', 'Laravel', 'FilamentPHP', 'CodeIgniter', 'REST APIs', 'Microservices'],
-		Frontend: ['Vue.js', 'Svelte', 'Angular', 'Alpine.js', 'JavaScript'],
-		Database: ['MySQL', 'PostgreSQL', 'SQL Server'],
-		'Cloud & DevOps': ['GCP', 'Azure', 'Docker', 'CI/CD', 'Git', 'Azure DevOps'],
-		'AI / ML': ['TensorFlow', 'OpenNLP', 'Python', 'Machine Learning'],
-		Leadership: ['Agile/Scrum', 'Mentoring', 'Code Review', 'Architecture Design', 'Team Leadership', 'Performance Optimization']
-	},
+		// Unified skills section grouped by category for better ATS parsing
+		technicalSkills: {
+			Backend: [
+				'PHP',
+				'Golang',
+				'Node.js',
+				'Python',
+				'.NET',
+				'Laravel',
+				'FilamentPHP',
+				'CodeIgniter',
+				'REST APIs',
+				'Microservices'
+			],
+			Frontend: ['Vue.js', 'Svelte', 'Angular', 'Alpine.js', 'JavaScript'],
+			Database: ['MySQL', 'PostgreSQL', 'SQL Server'],
+			'Cloud & DevOps': ['GCP', 'Azure', 'Docker', 'CI/CD', 'Git', 'Azure DevOps'],
+			'AI / ML': ['TensorFlow', 'OpenNLP', 'Python', 'Machine Learning'],
+			Leadership: [
+				'Agile/Scrum',
+				'Mentoring',
+				'Code Review',
+				'Architecture Design',
+				'Team Leadership',
+				'Performance Optimization'
+			]
+		},
 
-	// Keep legacy format for JSON-LD
-	techStacks: [
-		'PHP',
-		'JavaScript',
-		'MySQL',
-		'Laravel',
-		'FilamentPHP',
-		'Google Cloud Platform',
-		'Golang',
-		'Python',
-		'Vue.js',
-		'Svelte',
-		'Node.js',
-		'.NET',
-		'PostgreSQL',
-		'SQL Server',
-		'Docker',
-		'Alpine.js',
-		'Machine Learning',
-		'CodeIgniter',
-		'Azure DevOps',
-		'Git',
-		'REST APIs',
-		'Microservices'
-	],
+		// Keep legacy format for JSON-LD
+		techStacks: [
+			'PHP',
+			'JavaScript',
+			'MySQL',
+			'Laravel',
+			'FilamentPHP',
+			'Google Cloud Platform',
+			'Golang',
+			'Python',
+			'Vue.js',
+			'Svelte',
+			'Node.js',
+			'.NET',
+			'PostgreSQL',
+			'SQL Server',
+			'Docker',
+			'Alpine.js',
+			'Machine Learning',
+			'CodeIgniter',
+			'Azure DevOps',
+			'Git',
+			'REST APIs',
+			'Microservices'
+		],
 
-	skills: [
-		'Full-Stack Development',
-		'Backend Architecture',
-		'Frontend Development',
-		'Cloud Infrastructure (GCP, Azure)',
-		'DevOps & CI/CD',
-		'Database Design & Optimization',
-		'API Development & Integration',
-		'Machine Learning & AI',
-		'Team Leadership & Mentoring',
-		'Agile/Scrum Methodologies',
-		'Software Architecture',
-		'Performance Optimization',
-		'Code Review & Quality Assurance',
-		'Technical Documentation',
-		'Problem Solving & Critical Thinking'
-	],
+		skills: [
+			'Full-Stack Development',
+			'Backend Architecture',
+			'Frontend Development',
+			'Cloud Infrastructure (GCP, Azure)',
+			'DevOps & CI/CD',
+			'Database Design & Optimization',
+			'API Development & Integration',
+			'Machine Learning & AI',
+			'Team Leadership & Mentoring',
+			'Agile/Scrum Methodologies',
+			'Software Architecture',
+			'Performance Optimization',
+			'Code Review & Quality Assurance',
+			'Technical Documentation',
+			'Problem Solving & Critical Thinking'
+		],
 
 		experiences: [
 			{
@@ -158,133 +176,136 @@
 			}
 		],
 
-	// Grouped projects with key highlights
-	projectGroups: {
-		'AI & Machine Learning': [
-			{
-				name: 'AI-Powered Resume Analyzer',
-				tech: 'Golang & Python',
-				impact: 'Built NLP pipeline improving parsing accuracy and reducing manual screening time'
-			},
-			{
-				name: 'Image Classification ML Models (8 models)',
-				tech: 'Python & TensorFlow',
-				impact: 'Trained custom models achieving high accuracy rates for diverse classification tasks'
-			},
-			{
-				name: 'Sentiment Analysis AI Model',
-				tech: 'OpenNLP & Python',
-				impact: 'Developed sentiment classification system for text analysis applications'
-			},
-			{
-				name: "Named Entity Recognition for Al-Qur'an Text",
-				tech: 'OpenNLP',
-				impact: 'Created specialized NER model for religious text processing'
-			}
-		],
-		'Enterprise & CMS Systems': [
-			{
-				name: 'Enterprise Multi-Tenancy CMS Platform',
-				tech: 'FilamentPHP',
-				impact: 'Delivered modular architecture enabling 20+ client deployments across various industries'
-			},
-			{
-				name: 'Multi-Level Marketing (MLM) Platform',
-				tech: 'FilamentPHP',
-				impact: 'Built comprehensive MLM system with commission tracking and member management'
-			},
-			{
-				name: 'Recruitment Management System',
-				tech: 'SvelteKit + Laravel',
-				impact: 'Streamlined hiring workflow for HR teams managing hundreds of applicants'
-			},
-			{
-				name: 'Real-time Chat Consultation SPA',
-				tech: 'Laravel & Vue.js',
-				impact: 'Enabled instant communication between consultants and clients'
-			},
-			{
-				name: 'Technician Support & Ticketing System',
-				tech: 'Laravel',
-				impact: 'Optimized field service operations and ticket resolution tracking'
-			}
-		],
-		'Fintech & Payment Systems': [
-			{
-				name: 'E-Money & Payment Processing System',
-				tech: 'Lumen PHP',
-				impact: 'Processed high-volume daily transactions with multiple bank integrations'
-			},
-			{
-				name: 'Payment Gateway Integration API',
-				tech: 'Golang',
-				impact: 'Built secure API handling payment processing with major Indonesian banks'
-			},
-			{
-				name: 'School Payment & Billing System',
-				tech: 'Vue.js & PHP',
-				impact: 'Automated tuition collection and financial reporting for educational institutions'
-			}
-		],
-		'Education & Public Sector': [
-			{
-				name: 'Online Psychological Testing Platform',
-				tech: 'Golang',
-				impact: 'Delivered scalable assessment platform serving thousands of test-takers'
-			},
-			{
-				name: 'Digital Library Management System',
-				tech: 'Golang & Angular',
-				impact: 'Managed extensive book catalog with advanced search and student access controls'
-			},
-			{
-				name: 'School Admission Management System',
-				tech: 'Vue.js & PHP',
-				impact: 'Digitized enrollment process for educational institutions'
-			},
-			{
-				name: 'Fingerprint Attendance Integration System',
-				tech: 'Python',
-				impact: 'Automated attendance tracking across multiple school locations'
-			},
-			{
-				name: 'Disaster Mitigation & Mapping System',
-				tech: 'JavaScript & OpenStreetMap',
-				impact: 'Provided real-time disaster monitoring and response coordination'
-			},
-			{
-				name: 'Accounting System for Non-Profit Organization',
-				tech: 'Node.js & Angular',
-				impact: 'Simplified financial management and reporting for non-profit operations'
-			}
-		]
-	},
+		// Grouped projects with key highlights
+		projectGroups: {
+			'AI & Machine Learning': [
+				{
+					name: 'AI-Powered Resume Analyzer',
+					tech: 'Golang & Python',
+					impact: 'Built NLP pipeline improving parsing accuracy and reducing manual screening time'
+				},
+				{
+					name: 'Image Classification ML Models (8 models)',
+					tech: 'Python & TensorFlow',
+					impact:
+						'Trained custom models achieving high accuracy rates for diverse classification tasks'
+				},
+				{
+					name: 'Sentiment Analysis AI Model',
+					tech: 'OpenNLP & Python',
+					impact: 'Developed sentiment classification system for text analysis applications'
+				},
+				{
+					name: "Named Entity Recognition for Al-Qur'an Text",
+					tech: 'OpenNLP',
+					impact: 'Created specialized NER model for religious text processing'
+				}
+			],
+			'Enterprise & CMS Systems': [
+				{
+					name: 'Enterprise Multi-Tenancy CMS Platform',
+					tech: 'FilamentPHP',
+					impact:
+						'Delivered modular architecture enabling 20+ client deployments across various industries'
+				},
+				{
+					name: 'Multi-Level Marketing (MLM) Platform',
+					tech: 'FilamentPHP',
+					impact: 'Built comprehensive MLM system with commission tracking and member management'
+				},
+				{
+					name: 'Recruitment Management System',
+					tech: 'SvelteKit + Laravel',
+					impact: 'Streamlined hiring workflow for HR teams managing hundreds of applicants'
+				},
+				{
+					name: 'Real-time Chat Consultation SPA',
+					tech: 'Laravel & Vue.js',
+					impact: 'Enabled instant communication between consultants and clients'
+				},
+				{
+					name: 'Technician Support & Ticketing System',
+					tech: 'Laravel',
+					impact: 'Optimized field service operations and ticket resolution tracking'
+				}
+			],
+			'Fintech & Payment Systems': [
+				{
+					name: 'E-Money & Payment Processing System',
+					tech: 'Lumen PHP',
+					impact: 'Processed high-volume daily transactions with multiple bank integrations'
+				},
+				{
+					name: 'Payment Gateway Integration API',
+					tech: 'Golang',
+					impact: 'Built secure API handling payment processing with major Indonesian banks'
+				},
+				{
+					name: 'School Payment & Billing System',
+					tech: 'Vue.js & PHP',
+					impact:
+						'Automated tuition collection and financial reporting for educational institutions'
+				}
+			],
+			'Education & Public Sector': [
+				{
+					name: 'Online Psychological Testing Platform',
+					tech: 'Golang',
+					impact: 'Delivered scalable assessment platform serving thousands of test-takers'
+				},
+				{
+					name: 'Digital Library Management System',
+					tech: 'Golang & Angular',
+					impact: 'Managed extensive book catalog with advanced search and student access controls'
+				},
+				{
+					name: 'School Admission Management System',
+					tech: 'Vue.js & PHP',
+					impact: 'Digitized enrollment process for educational institutions'
+				},
+				{
+					name: 'Fingerprint Attendance Integration System',
+					tech: 'Python',
+					impact: 'Automated attendance tracking across multiple school locations'
+				},
+				{
+					name: 'Disaster Mitigation & Mapping System',
+					tech: 'JavaScript & OpenStreetMap',
+					impact: 'Provided real-time disaster monitoring and response coordination'
+				},
+				{
+					name: 'Accounting System for Non-Profit Organization',
+					tech: 'Node.js & Angular',
+					impact: 'Simplified financial management and reporting for non-profit operations'
+				}
+			]
+		},
 
-	// Keep legacy format for backward compatibility
-	projects: [
-		'Enterprise Multi-Tenancy CMS Platform — FilamentPHP',
-		'Multi-Level Marketing (MLM) Platform — FilamentPHP',
-		'AI-Powered Resume Analyzer — Golang',
-		'Online Psychological Testing Platform — Golang',
-		'Recruitment Management System — SvelteKit + Laravel',
-		'Real-time Chat Consultation SPA — Laravel & Vue.js',
-		'Technician Support & Ticketing System — Laravel',
-		'Image Classification ML Models (8 models) — Python & TensorFlow',
-		'Disaster Mitigation & Mapping System — JavaScript & OpenStreetMap',
-		'School Admission Management System — Vue.js & PHP',
-		"Named Entity Recognition for Al-Qur'an Text — OpenNLP",
-		'Sentiment Analysis AI Model — OpenNLP & Python',
-		'E-Money & Payment Processing System — Lumen PHP',
-		'Fingerprint Attendance Integration System — Python',
-		'Digital Library Management System — Golang & Angular',
-		'Payment Gateway Integration API — Golang',
-		'School Payment & Billing System — Vue.js & PHP',
-		'Dynamic Document Generator (DOCX/PDF) — Python',
-		'Accounting System for Non-Profit Organization — Node.js & Angular',
-		'Social Cataloging Platform — Lumen PHP',
-		'Data Migration Tool (SekolahKita.net to MongoDB) — Python',
-		'Document to Database Converter — Python'
-	],
+		// Keep legacy format for backward compatibility
+		projects: [
+			'Enterprise Multi-Tenancy CMS Platform — FilamentPHP',
+			'Multi-Level Marketing (MLM) Platform — FilamentPHP',
+			'AI-Powered Resume Analyzer — Golang',
+			'Online Psychological Testing Platform — Golang',
+			'Recruitment Management System — SvelteKit + Laravel',
+			'Real-time Chat Consultation SPA — Laravel & Vue.js',
+			'Technician Support & Ticketing System — Laravel',
+			'Image Classification ML Models (8 models) — Python & TensorFlow',
+			'Disaster Mitigation & Mapping System — JavaScript & OpenStreetMap',
+			'School Admission Management System — Vue.js & PHP',
+			"Named Entity Recognition for Al-Qur'an Text — OpenNLP",
+			'Sentiment Analysis AI Model — OpenNLP & Python',
+			'E-Money & Payment Processing System — Lumen PHP',
+			'Fingerprint Attendance Integration System — Python',
+			'Digital Library Management System — Golang & Angular',
+			'Payment Gateway Integration API — Golang',
+			'School Payment & Billing System — Vue.js & PHP',
+			'Dynamic Document Generator (DOCX/PDF) — Python',
+			'Accounting System for Non-Profit Organization — Node.js & Angular',
+			'Social Cataloging Platform — Lumen PHP',
+			'Data Migration Tool (SekolahKita.net to MongoDB) — Python',
+			'Document to Database Converter — Python'
+		],
 
 		education: [
 			{
@@ -433,35 +454,47 @@
 
 <svelte:head>
 	<title>{cv.name} - {cv.title} | CV / Resume</title>
-	
+
 	<!-- SEO Meta Tags -->
-	<meta name="description" content="Senior Full-Stack Engineer and Technical Leader with 9+ years of experience delivering high-impact web and cloud solutions across fintech, education, and AI sectors. Expert in PHP, Golang, Python, Vue.js, Svelte, and cloud infrastructure (GCP, Azure)." />
-	<meta name="keywords" content="Full-Stack Engineer, Senior Developer, Technical Leader, PHP, Golang, Python, Vue.js, Svelte, Node.js, .NET, Laravel, FilamentPHP, Google Cloud Platform, Azure, AI, Machine Learning, TensorFlow, DevOps, CI/CD, Docker, Software Architecture, Team Leadership, Riva'i Amin" />
-	<meta name="author" content="{cv.name}" />
+	<meta
+		name="description"
+		content="Senior Full-Stack Engineer and Technical Leader with 9+ years of experience delivering high-impact web and cloud solutions across fintech, education, and AI sectors. Expert in PHP, Golang, Python, Vue.js, Svelte, and cloud infrastructure (GCP, Azure)."
+	/>
+	<meta
+		name="keywords"
+		content="Full-Stack Engineer, Senior Developer, Technical Leader, PHP, Golang, Python, Vue.js, Svelte, Node.js, .NET, Laravel, FilamentPHP, Google Cloud Platform, Azure, AI, Machine Learning, TensorFlow, DevOps, CI/CD, Docker, Software Architecture, Team Leadership, Riva'i Amin"
+	/>
+	<meta name="author" content={cv.name} />
 	<meta name="robots" content="index, follow" />
-	
+
 	<!-- Open Graph Meta Tags for Social Media -->
 	<meta property="og:title" content="{cv.name} - {cv.title}" />
-	<meta property="og:description" content="Senior Full-Stack Engineer with 9+ years of experience in web development, cloud solutions, and AI. Skilled in PHP, Golang, Python, Vue.js, Svelte, and cloud infrastructure." />
+	<meta
+		property="og:description"
+		content="Senior Full-Stack Engineer with 9+ years of experience in web development, cloud solutions, and AI. Skilled in PHP, Golang, Python, Vue.js, Svelte, and cloud infrastructure."
+	/>
 	<meta property="og:type" content="profile" />
 	<meta property="og:url" content="{cv.contacts.portfolio}/cv" />
 	<meta property="og:image" content="{cv.contacts.portfolio}/rivaiamin_photo.jpg" />
 	<meta property="og:site_name" content="{cv.name} - Portfolio" />
 	<meta property="profile:first_name" content="Riva'i" />
 	<meta property="profile:last_name" content="Amin" />
-	
+
 	<!-- Twitter Card Meta Tags -->
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:title" content="{cv.name} - {cv.title}" />
-	<meta name="twitter:description" content="Senior Full-Stack Engineer with 9+ years of experience. Expert in PHP, Golang, Python, Vue.js, Svelte, and cloud infrastructure." />
+	<meta
+		name="twitter:description"
+		content="Senior Full-Stack Engineer with 9+ years of experience. Expert in PHP, Golang, Python, Vue.js, Svelte, and cloud infrastructure."
+	/>
 	<meta name="twitter:image" content="{cv.contacts.portfolio}/rivaiamin_photo.jpg" />
-	
+
 	<!-- Canonical URL -->
 	<link rel="canonical" href="{cv.contacts.portfolio}/cv" />
-	
+
 	<!-- JSON-LD Structured Data for SEO/ATS -->
 	{@html `<script type="application/ld+json">${JSON.stringify(jsonLd, null, 2)}</script>`}
-	
+
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
@@ -637,7 +670,7 @@
 						</svg>
 						Share Link
 					</button>
-					
+
 					<button
 						id="download-btn"
 						on:click={downloadPDF}
@@ -661,16 +694,31 @@
 					</button>
 				</div>
 			</div>
-			
+
 			<!-- Bottom row: Shareable link info -->
 			<div class="flex justify-center">
-				<div class="bg-white/90 backdrop-blur-sm border border-blue-200 rounded-lg px-4 py-2 shadow-sm">
+				<div
+					class="bg-white/90 backdrop-blur-sm border border-blue-200 rounded-lg px-4 py-2 shadow-sm"
+				>
 					<p class="text-xs text-gray-600 flex items-center gap-2">
-						<svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="h-3 w-3 text-blue-500"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+							/>
 						</svg>
 						<span class="font-medium text-blue-700">Always up-to-date:</span>
-						<span class="font-mono text-xs bg-blue-50 px-2 py-0.5 rounded border">{cv.contacts.portfolio}/cv</span>
+						<span class="font-mono text-xs bg-blue-50 px-2 py-0.5 rounded border"
+							>{cv.contacts.portfolio}/cv</span
+						>
 					</p>
 				</div>
 			</div>
@@ -685,11 +733,11 @@
 				<!-- Print-only online CV notice -->
 				<div class="hidden print:block bg-blue-50 border-l-4 border-blue-600 p-4 mb-6 rounded">
 					<p class="text-sm text-gray-800">
-						<span class="font-bold text-blue-700">📄 View this CV online:</span> 
+						<span class="font-bold text-blue-700">📄 View this CV online:</span>
 						<span class="font-semibold">{cv.contacts.portfolio}/cv</span>
 					</p>
 				</div>
-				
+
 				<div class="flex items-start gap-8">
 					<img
 						src={cv.photo}
@@ -789,8 +837,15 @@
 							</div>
 							<!-- LinkedIn Profile Link -->
 							<div class="flex items-center gap-2">
-								<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-600 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-									<path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="h-4 w-4 text-blue-600 flex-shrink-0"
+									fill="currentColor"
+									viewBox="0 0 24 24"
+								>
+									<path
+										d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+									/>
 								</svg>
 								<a
 									href={cv.contacts.linkedin}
@@ -804,29 +859,33 @@
 				</div>
 			</header>
 
-		<!-- Summary -->
-		<section class="mb-10 print:mb-6 mt-8 print:mt-6 print-break">
-			<h2 class="text-2xl font-extrabold text-gray-900 uppercase tracking-wide mb-4 pb-2 border-b-2 border-blue-600">
-				PROFESSIONAL SUMMARY
-			</h2>
-			<div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl border-l-4 border-blue-600">
-				<p class="text-gray-800 leading-relaxed text-base">{cv.summary}</p>
-			</div>
-		</section>
+			<!-- Summary -->
+			<section class="mb-10 print:mb-6 mt-8 print:mt-6 print-break">
+				<h2
+					class="text-2xl font-extrabold text-gray-900 uppercase tracking-wide mb-4 pb-2 border-b-2 border-blue-600"
+				>
+					PROFESSIONAL SUMMARY
+				</h2>
+				<div
+					class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl border-l-4 border-blue-600"
+				>
+					<p class="text-gray-800 leading-relaxed text-base">{cv.summary}</p>
+				</div>
+			</section>
 
-		<!-- Section Divider -->
-		<div class="border-t border-gray-200 my-10 print:my-6"></div>
+			<!-- Section Divider -->
+			<div class="border-t border-gray-200 my-10 print:my-6"></div>
 
-		<!-- Experience -->
-		<section class="mb-10 print:mb-6 mt-8 print:mt-6 print-break">
-				<h2 class="text-2xl font-extrabold text-gray-900 uppercase tracking-wide mb-6 pb-2 border-b-2 border-blue-600">
+			<!-- Experience -->
+			<section class="mb-10 print:mb-6 mt-8 print:mt-6 print-break">
+				<h2
+					class="text-2xl font-extrabold text-gray-900 uppercase tracking-wide mb-6 pb-2 border-b-2 border-blue-600"
+				>
 					WORK EXPERIENCE
 				</h2>
 				<div class="space-y-7">
 					{#each cv.experiences as exp, index}
-						<div
-							class="experience-entry bg-gray-50 p-5 rounded-xl border-l-4 border-blue-500"
-						>
+						<div class="experience-entry bg-gray-50 p-5 rounded-xl border-l-4 border-blue-500">
 							<div class="flex justify-between items-start mb-3">
 								<div class="flex-1">
 									<h3 class="text-xl font-extrabold text-gray-900">{exp.company}</h3>
@@ -849,67 +908,79 @@
 				</div>
 			</section>
 
-		<!-- Section Divider -->
-		<div class="border-t border-gray-200 my-10 print:my-6"></div>
+			<!-- Section Divider -->
+			<div class="border-t border-gray-200 my-10 print:my-6"></div>
 
-		<!-- Unified Technical & Leadership Skills -->
-		<section class="mb-10 print:mb-6 mt-8 print:mt-6 print-break">
-			<h2 class="text-2xl font-extrabold text-gray-900 uppercase tracking-wide mb-6 pb-2 border-b-2 border-blue-600">
-				TECHNICAL & LEADERSHIP SKILLS
-			</h2>
-			<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-				{#each Object.entries(cv.technicalSkills) as [category, skills]}
-					<div class="bg-gray-50 p-5 rounded-xl border-l-4 border-blue-500">
-						<h3 class="text-base font-extrabold text-blue-700 mb-3 uppercase tracking-wide">
-							{category}
-						</h3>
-						<div class="text-gray-800 text-sm leading-relaxed">
-							{skills.join(' • ')}
+			<!-- Unified Technical & Leadership Skills -->
+			<section class="mb-10 print:mb-6 mt-8 print:mt-6 print-break">
+				<h2
+					class="text-2xl font-extrabold text-gray-900 uppercase tracking-wide mb-6 pb-2 border-b-2 border-blue-600"
+				>
+					TECHNICAL & LEADERSHIP SKILLS
+				</h2>
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+					{#each Object.entries(cv.technicalSkills) as [category, skills]}
+						<div class="bg-gray-50 p-5 rounded-xl border-l-4 border-blue-500">
+							<h3 class="text-base font-extrabold text-blue-700 mb-3 uppercase tracking-wide">
+								{category}
+							</h3>
+							<div class="text-gray-800 text-sm leading-relaxed">
+								{skills.join(' • ')}
+							</div>
 						</div>
-					</div>
-				{/each}
-			</div>
-		</section>
+					{/each}
+				</div>
+			</section>
 
-		<!-- Section Divider -->
-		<div class="border-t border-gray-200 my-10 print:my-6"></div>
+			<!-- Section Divider -->
+			<div class="border-t border-gray-200 my-10 print:my-6"></div>
 
-		<!-- Projects -->
-		<section class="mb-10 print:mb-6 mt-8 print:mt-6 print-break">
-			<h2 class="text-2xl font-extrabold text-gray-900 uppercase tracking-wide mb-6 pb-2 border-b-2 border-blue-600">
-				KEY PROJECTS
-			</h2>
-			<div class="space-y-8">
-				{#each Object.entries(cv.projectGroups) as [category, projects]}
-					<div>
-						<h3 class="text-lg font-extrabold text-blue-700 mb-4 uppercase tracking-wide flex items-center gap-2">
-							<span class="w-2 h-2 bg-blue-600 rounded-full"></span>
-							{category}
-						</h3>
-						<div class="grid grid-cols-1 gap-4 ml-4">
-							{#each projects as project}
-								<div class="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-400">
-									<div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-2">
-										<h4 class="text-base font-bold text-gray-900">{project.name}</h4>
-										<span class="text-xs text-blue-700 font-semibold bg-blue-100 px-3 py-1 rounded-full whitespace-nowrap self-start">
-											{project.tech}
-										</span>
+			<!-- Projects -->
+			<section class="mb-10 print:mb-6 mt-8 print:mt-6 print-break">
+				<h2
+					class="text-2xl font-extrabold text-gray-900 uppercase tracking-wide mb-6 pb-2 border-b-2 border-blue-600"
+				>
+					KEY PROJECTS
+				</h2>
+				<div class="space-y-8">
+					{#each Object.entries(cv.projectGroups) as [category, projects]}
+						<div>
+							<h3
+								class="text-lg font-extrabold text-blue-700 mb-4 uppercase tracking-wide flex items-center gap-2"
+							>
+								<span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+								{category}
+							</h3>
+							<div class="grid grid-cols-1 gap-4 ml-4">
+								{#each projects as project}
+									<div class="bg-gray-50 p-4 rounded-lg border-l-4 border-blue-400">
+										<div
+											class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-2"
+										>
+											<h4 class="text-base font-bold text-gray-900">{project.name}</h4>
+											<span
+												class="text-xs text-blue-700 font-semibold bg-blue-100 px-3 py-1 rounded-full whitespace-nowrap self-start"
+											>
+												{project.tech}
+											</span>
+										</div>
+										<p class="text-sm text-gray-700 leading-relaxed">{project.impact}</p>
 									</div>
-									<p class="text-sm text-gray-700 leading-relaxed">{project.impact}</p>
-								</div>
-							{/each}
+								{/each}
+							</div>
 						</div>
-					</div>
-				{/each}
-			</div>
-		</section>
+					{/each}
+				</div>
+			</section>
 
-		<!-- Section Divider -->
-		<div class="border-t border-gray-200 my-10 print:my-6"></div>
+			<!-- Section Divider -->
+			<div class="border-t border-gray-200 my-10 print:my-6"></div>
 
 			<!-- Education -->
 			<section class="mb-10 print:mb-6 mt-8 print:mt-6 print-break">
-				<h2 class="text-2xl font-extrabold text-gray-900 uppercase tracking-wide mb-4 pb-2 border-b-2 border-blue-600">
+				<h2
+					class="text-2xl font-extrabold text-gray-900 uppercase tracking-wide mb-4 pb-2 border-b-2 border-blue-600"
+				>
 					EDUCATION
 				</h2>
 				<div class="space-y-5">
@@ -923,12 +994,14 @@
 				</div>
 			</section>
 
-		<!-- Section Divider -->
-		<div class="border-t border-gray-200 my-10 print:my-6"></div>
+			<!-- Section Divider -->
+			<div class="border-t border-gray-200 my-10 print:my-6"></div>
 
 			<!-- Other Professional Activities (Judge, Trainer, etc.) -->
 			<section class="mb-10 print:mb-6 mt-8 print:mt-6 print-break">
-				<h2 class="text-2xl font-extrabold text-gray-900 uppercase tracking-wide mb-5 pb-2 border-b-2 border-blue-600">
+				<h2
+					class="text-2xl font-extrabold text-gray-900 uppercase tracking-wide mb-5 pb-2 border-b-2 border-blue-600"
+				>
 					PROFESSIONAL ACTIVITIES
 				</h2>
 				<div class="space-y-5">
@@ -950,12 +1023,14 @@
 				</div>
 			</section>
 
-		<!-- Section Divider -->
-		<div class="border-t border-gray-200 my-10 print:my-6"></div>
+			<!-- Section Divider -->
+			<div class="border-t border-gray-200 my-10 print:my-6"></div>
 
 			<!-- Awards -->
 			<section class="mb-10 print:mb-6 mt-8 print:mt-6 print-break">
-				<h2 class="text-2xl font-extrabold text-gray-900 uppercase tracking-wide mb-4 pb-2 border-b-2 border-blue-600">
+				<h2
+					class="text-2xl font-extrabold text-gray-900 uppercase tracking-wide mb-4 pb-2 border-b-2 border-blue-600"
+				>
 					AWARDS & HONORS
 				</h2>
 				<ul class="list-disc list-outside ml-5 space-y-2">
@@ -967,92 +1042,96 @@
 				</ul>
 			</section>
 
-		<!-- Section Divider -->
-		<div class="border-t border-gray-200 my-10 print:my-6"></div>
+			<!-- Section Divider -->
+			<div class="border-t border-gray-200 my-10 print:my-6"></div>
 
-		<!-- Links -->
-		<section class="mt-8 print:mt-6 print-break">
-			<h2 class="text-2xl font-extrabold text-gray-900 uppercase tracking-wide mb-4 pb-2 border-b-2 border-blue-600">
-				CONTACT
-			</h2>
-			<div class="grid grid-cols-1 gap-4 text-gray-800">
-				<div class="flex items-center gap-3 bg-blue-50 p-4 rounded-lg">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						class="h-5 w-5 text-blue-600"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke="currentColor"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-						/>
-					</svg>
-					<div>
-						<span class="font-bold text-gray-900 block text-xs">Email</span>
-						<a
-							href={'mailto:' + cv.contacts.email}
-							class="text-blue-700 hover:underline font-semibold">{cv.contacts.email}</a
+			<!-- Links -->
+			<section class="mt-8 print:mt-6 print-break">
+				<h2
+					class="text-2xl font-extrabold text-gray-900 uppercase tracking-wide mb-4 pb-2 border-b-2 border-blue-600"
+				>
+					CONTACT
+				</h2>
+				<div class="grid grid-cols-1 gap-4 text-gray-800">
+					<div class="flex items-center gap-3 bg-blue-50 p-4 rounded-lg">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="h-5 w-5 text-blue-600"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
 						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+							/>
+						</svg>
+						<div>
+							<span class="font-bold text-gray-900 block text-xs">Email</span>
+							<a
+								href={'mailto:' + cv.contacts.email}
+								class="text-blue-700 hover:underline font-semibold">{cv.contacts.email}</a
+							>
+						</div>
+					</div>
+					<div class="flex items-center gap-3 bg-blue-50 p-4 rounded-lg">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="h-5 w-5 text-blue-600"
+							fill="currentColor"
+							viewBox="0 0 24 24"
+						>
+							<path
+								d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+							/>
+						</svg>
+						<div>
+							<span class="font-bold text-gray-900 block text-xs">LinkedIn</span>
+							<a
+								href={cv.contacts.linkedin}
+								target="_blank"
+								rel="noopener"
+								class="text-blue-700 hover:underline break-all font-semibold"
+								>{cv.contacts.linkedin}</a
+							>
+						</div>
+					</div>
+					<div class="flex items-center gap-3 bg-blue-50 p-4 rounded-lg">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="h-5 w-5 text-blue-600"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+							/>
+						</svg>
+						<div>
+							<span class="font-bold text-gray-900 block text-xs">Portfolio</span>
+							<a
+								href={cv.contacts.portfolio}
+								target="_blank"
+								rel="noopener"
+								class="text-blue-700 hover:underline font-semibold">{cv.contacts.portfolio}</a
+							>
+						</div>
 					</div>
 				</div>
-				<div class="flex items-center gap-3 bg-blue-50 p-4 rounded-lg">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						class="h-5 w-5 text-blue-600"
-						fill="currentColor"
-						viewBox="0 0 24 24"
-					>
-						<path
-							d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-						/>
-					</svg>
-					<div>
-						<span class="font-bold text-gray-900 block text-xs">LinkedIn</span>
-						<a
-							href={cv.contacts.linkedin}
-							target="_blank"
-							rel="noopener"
-							class="text-blue-700 hover:underline break-all font-semibold"
-							>{cv.contacts.linkedin}</a
-						>
-					</div>
-				</div>
-				<div class="flex items-center gap-3 bg-blue-50 p-4 rounded-lg">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						class="h-5 w-5 text-blue-600"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke="currentColor"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
-						/>
-					</svg>
-					<div>
-						<span class="font-bold text-gray-900 block text-xs">Portfolio</span>
-						<a
-							href={cv.contacts.portfolio}
-							target="_blank"
-							rel="noopener"
-							class="text-blue-700 hover:underline font-semibold">{cv.contacts.portfolio}</a
-						>
-					</div>
-				</div>
-			</div>
-		</section>
+			</section>
 
-		<!-- Print-only Footer -->
-		<footer class="hidden print:block text-center text-xs text-gray-600 mt-12 pt-6 border-t border-gray-300">
-			{cv.name} • {cv.contacts.email} • {cv.contacts.phone} • {cv.contacts.portfolio}
-		</footer>
-	</div>
-</article>
+			<!-- Print-only Footer -->
+			<footer
+				class="hidden print:block text-center text-xs text-gray-600 mt-12 pt-6 border-t border-gray-300"
+			>
+				{cv.name} • {cv.contacts.email} • {cv.contacts.phone} • {cv.contacts.portfolio}
+			</footer>
+		</div>
+	</article>
 </main>

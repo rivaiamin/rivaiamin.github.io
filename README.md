@@ -32,6 +32,7 @@ Results-driven Senior Full-Stack Engineer with **9+ years of experience** delive
 <div align="center">
 
 #### Backend
+
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![Golang](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
@@ -41,6 +42,7 @@ Results-driven Senior Full-Stack Engineer with **9+ years of experience** delive
 ![CodeIgniter](https://img.shields.io/badge/CodeIgniter-EF4223?style=for-the-badge&logo=codeigniter&logoColor=white)
 
 #### Frontend
+
 ![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white)
 ![Svelte](https://img.shields.io/badge/Svelte-FF3E00?style=for-the-badge&logo=svelte&logoColor=white)
 ![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
@@ -49,17 +51,20 @@ Results-driven Senior Full-Stack Engineer with **9+ years of experience** delive
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 #### Database
+
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)
 
 #### Cloud & DevOps
+
 ![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
 ![Azure](https://img.shields.io/badge/Microsoft_Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
 #### AI/ML
+
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
@@ -106,14 +111,15 @@ Results-driven Senior Full-Stack Engineer with **9+ years of experience** delive
 
 <div align="center">
 
-| 🥇 Competition Wins | 📚 Mentoring Success | 🚀 Productivity Boost | 👨‍💼 Team Leadership |
-|:---:|:---:|:---:|:---:|
+|   🥇 Competition Wins    |     📚 Mentoring Success     |   🚀 Productivity Boost   |    👨‍💼 Team Leadership     |
+| :----------------------: | :--------------------------: | :-----------------------: | :-----------------------: |
 | **1st Place** Provincial | **6 Years** Consecutive Wins | **30%** Development Speed | **100+** Product Variants |
-| LKS Web Design 2010 | Trained Competition Teams | AI-Assisted Workflows | Led Engineering Teams |
+|   LKS Web Design 2010    |  Trained Competition Teams   |   AI-Assisted Workflows   |   Led Engineering Teams   |
 
 </div>
 
 **Key Highlights:**
+
 - 🥇 **LKS Web Design Competition 2010** — 1st Place Provincial Level (Banten Province)
 - 📚 **Training & Mentoring** — Trained multiple teams that achieved 6 consecutive years of city and province-level wins (2010-2017)
 - 🚀 **Innovation Leader** — Boosted development productivity by 30% with AI-assisted workflows
@@ -128,6 +134,7 @@ Results-driven Senior Full-Stack Engineer with **9+ years of experience** delive
 <td width="50%">
 
 #### 🏢 Enterprise Multi-Tenancy CMS Platform
+
 ![FilamentPHP](https://img.shields.io/badge/FilamentPHP-FF6B00?style=flat-square&logo=laravel&logoColor=white)
 
 Modular CMS architecture serving **20+ clients** across various industries with centralized management.
@@ -136,6 +143,7 @@ Modular CMS architecture serving **20+ clients** across various industries with 
 <td width="50%">
 
 #### 🤖 AI-Powered Resume Analyzer
+
 ![Golang](https://img.shields.io/badge/Golang-00ADD8?style=flat-square&logo=go&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 
@@ -147,6 +155,7 @@ NLP pipeline for automated resume parsing with improved accuracy and reduced man
 <td width="50%">
 
 #### 💳 E-Money & Payment Processing System
+
 ![PHP](https://img.shields.io/badge/Lumen-FF2D20?style=flat-square&logo=laravel&logoColor=white)
 
 High-volume transaction processing system with **multiple bank integrations** serving thousands of users daily.
@@ -155,6 +164,7 @@ High-volume transaction processing system with **multiple bank integrations** se
 <td width="50%">
 
 #### 🖼️ Image Classification ML Models
+
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
 
 Trained **8 custom models** achieving high accuracy rates for diverse classification tasks.
@@ -165,6 +175,7 @@ Trained **8 custom models** achieving high accuracy rates for diverse classifica
 <td width="50%">
 
 #### 📝 Online Psychological Testing Platform
+
 ![Golang](https://img.shields.io/badge/Golang-00ADD8?style=flat-square&logo=go&logoColor=white)
 
 Scalable assessment platform serving **thousands of test-takers** with real-time results processing.
@@ -173,6 +184,7 @@ Scalable assessment platform serving **thousands of test-takers** with real-time
 <td width="50%">
 
 #### 💼 Recruitment Management System
+
 ![SvelteKit](https://img.shields.io/badge/SvelteKit-FF3E00?style=flat-square&logo=svelte&logoColor=white)
 ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)
 
@@ -209,21 +221,22 @@ Streamlined hiring workflow for HR teams managing **hundreds of applicants** eff
 
 ```typescript
 const rivaiamin = {
-  code: ["PHP", "Golang", "Python", "JavaScript", "TypeScript"],
-  askMeAbout: ["web dev", "cloud architecture", "AI/ML", "team leadership"],
-  technologies: {
-    backend: ["Laravel", "Node.js", ".NET", "Golang"],
-    frontend: ["Vue.js", "Svelte", "Angular"],
-    cloud: ["GCP", "Azure", "Docker"],
-    databases: ["MySQL", "PostgreSQL", "SQL Server"],
-    ai: ["TensorFlow", "OpenNLP", "NLP"]
-  },
-  currentFocus: "Building scalable systems with AI-assisted workflows",
-  funFact: "First generation student who trained teams to 6 consecutive competition wins! 🏆"
+	code: ['PHP', 'Golang', 'Python', 'JavaScript', 'TypeScript'],
+	askMeAbout: ['web dev', 'cloud architecture', 'AI/ML', 'team leadership'],
+	technologies: {
+		backend: ['Laravel', 'Node.js', '.NET', 'Golang'],
+		frontend: ['Vue.js', 'Svelte', 'Angular'],
+		cloud: ['GCP', 'Azure', 'Docker'],
+		databases: ['MySQL', 'PostgreSQL', 'SQL Server'],
+		ai: ['TensorFlow', 'OpenNLP', 'NLP']
+	},
+	currentFocus: 'Building scalable systems with AI-assisted workflows',
+	funFact: 'First generation student who trained teams to 6 consecutive competition wins! 🏆'
 };
 ```
 
 **Quick Facts:**
+
 - 🎓 Started coding professionally at vocational high school
 - 🏅 Represented school at national LKS competition level (Web Design 2010)
 - 🎯 Mentored students achieving 6 consecutive years of competition wins (2010-2017)
