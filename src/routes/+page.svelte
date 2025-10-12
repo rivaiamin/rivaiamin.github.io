@@ -2,6 +2,55 @@
 	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
 
+	const siteData = {
+		name: "Riva'i Amin",
+		title: 'Senior Full-Stack Engineer & 3D Artist',
+		description: 'Professional portfolio of Riva\'i Amin - Senior Full-Stack Engineer with 9+ years of experience in web development, cloud solutions, AI, and 3D art. Expert in PHP, Golang, Python, Vue.js, Svelte, and modern web technologies.',
+		url: 'https://rivaiamin.github.io',
+		image: 'https://rivaiamin.github.io/rivaiamin_photo.jpg',
+		email: 'rivaiamin.id@gmail.com',
+		linkedin: 'https://linkedin.com/in/rivaiamin',
+		github: 'https://github.com/rivaiamin',
+		sketchfab: 'https://sketchfab.com/rivaiamin',
+		instagram: 'https://instagram.com/rivaiamin.tva'
+	};
+
+	const jsonLd = {
+		'@context': 'https://schema.org',
+		'@type': 'Person',
+		name: siteData.name,
+		jobTitle: siteData.title,
+		email: siteData.email,
+		url: siteData.url,
+		image: siteData.image,
+		sameAs: [
+			siteData.linkedin,
+			siteData.github,
+			siteData.sketchfab,
+			siteData.instagram
+		],
+		knowsAbout: [
+			'Full-Stack Development',
+			'Software Engineering',
+			'PHP',
+			'Golang',
+			'Python',
+			'JavaScript',
+			'Vue.js',
+			'Svelte',
+			'Laravel',
+			'Cloud Computing',
+			'Google Cloud Platform',
+			'Azure',
+			'Machine Learning',
+			'AI',
+			'3D Modeling',
+			'DevOps',
+			'CI/CD'
+		],
+		description: siteData.description
+	};
+
 	let particles: Array<{ x: number; y: number; size: number; duration: number; delay: number }> =
 		[];
 	let links: Array<{ href: string; label: string; icon: string }> = [];
@@ -71,6 +120,30 @@
 		];
 	});
 </script>
+
+<svelte:head>
+	<!-- Page-Specific Meta Tags (Override layout defaults) -->
+	<title>{siteData.name} - {siteData.title} | Portfolio</title>
+	<meta name="description" content={siteData.description} />
+	
+	<!-- Open Graph -->
+	<meta property="og:url" content={siteData.url} />
+	<meta property="og:title" content="{siteData.name} - {siteData.title}" />
+	<meta property="og:description" content={siteData.description} />
+	<meta property="og:image" content={siteData.image} />
+	
+	<!-- Twitter Card -->
+	<meta name="twitter:url" content={siteData.url} />
+	<meta name="twitter:title" content="{siteData.name} - {siteData.title}" />
+	<meta name="twitter:description" content={siteData.description} />
+	<meta name="twitter:image" content={siteData.image} />
+	
+	<!-- Canonical URL -->
+	<link rel="canonical" href={siteData.url} />
+	
+	<!-- JSON-LD Structured Data -->
+	{@html `<script type="application/ld+json">${JSON.stringify(jsonLd, null, 2)}</script>`}
+</svelte:head>
 
 <div class="fixed inset-0 bg-black overflow-hidden">
 	<!-- 3D Model Background -->

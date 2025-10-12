@@ -207,23 +207,26 @@
 	/>
 
 	<!-- Open Graph Meta Tags -->
-	<meta property="og:title" content="{profile.name} - Professional Profile" />
+	<meta property="og:title" content={profile.name + ' - Professional Profile'} />
 	<meta
 		property="og:description"
 		content="Senior Full-Stack Engineer and Technical Leader specializing in scalable web applications, cloud infrastructure, and AI solutions."
 	/>
 	<meta property="og:type" content="profile" />
-	<meta property="og:url" content="{profile.contacts.portfolio}/profile" />
-	<meta property="og:image" content="{profile.contacts.portfolio}/rivaiamin_photo.jpg" />
+	<meta property="og:url" content={profile.contacts.portfolio + '/profile'} />
+	<meta property="og:image" content={profile.contacts.portfolio + '/rivaiamin_photo.jpg'} />
 
 	<!-- Twitter Card Meta Tags -->
 	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:title" content="{profile.name} - Professional Profile" />
+	<meta name="twitter:title" content={profile.name + ' - Professional Profile'} />
 	<meta
 		name="twitter:description"
 		content="Senior Full-Stack Engineer and Technical Leader with expertise in modern web technologies, cloud infrastructure, and AI."
 	/>
-	<meta name="twitter:image" content="{profile.contacts.portfolio}/rivaiamin_photo.jpg" />
+	<meta name="twitter:image" content={profile.contacts.portfolio + '/rivaiamin_photo.jpg'} />
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href={profile.contacts.portfolio + '/profile'} />
 
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');

@@ -6,46 +6,55 @@
 </script>
 
 <svelte:head>
-	<!-- Basic Meta Tags -->
-	<title>Rivai Amin - Software Engineer & 3D Artist Portfolio</title>
+	<!-- Default Meta Tags (can be overridden by individual pages) -->
+	<title>Riva'i Amin - Senior Full-Stack Engineer & 3D Artist</title>
 	<meta
 		name="description"
-		content="Rivai Amin is a Software Engineer and 3D Artist specializing in web development, 3D modeling, and creative digital solutions. View portfolio and curriculum vitae."
+		content="Senior Full-Stack Engineer with 9+ years of experience in web development, cloud solutions, AI, and 3D art. Expert in PHP, Golang, Python, Vue.js, Svelte, and modern technologies."
 	/>
 	<meta
 		name="keywords"
-		content="Rivai Amin, Software Engineer, 3D Artist, Web Developer, Portfolio, Curriculum Vitae, 3D Modeling, Programming, GitHub"
+		content="Riva'i Amin, Rivai Amin, Full-Stack Engineer, Senior Developer, Software Engineer, 3D Artist, PHP, Golang, Python, JavaScript, Vue.js, Svelte, Laravel, Cloud Computing, GCP, Azure, AI, Machine Learning, DevOps, Technical Leader, Indonesia Developer, Web Development"
 	/>
-	<meta name="author" content="Rivai Amin" />
+	<meta name="author" content="Riva'i Amin" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta charset="UTF-8" />
-
-	<!-- Open Graph / Facebook -->
+	<meta name="robots" content="index, follow" />
+	<meta name="language" content="English" />
+	<meta name="revisit-after" content="7 days" />
+	
+	<!-- Open Graph / Facebook (Default) -->
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://rivaiamin.github.io/" />
-	<meta property="og:title" content="Rivai Amin - Software Engineer & 3D Artist" />
+	<meta property="og:title" content="Riva'i Amin - Senior Full-Stack Engineer & 3D Artist" />
 	<meta
 		property="og:description"
-		content="Software Engineer and 3D Artist specializing in web development, 3D modeling, and creative digital solutions."
+		content="Senior Full-Stack Engineer with 9+ years of experience specializing in web development, cloud solutions, AI, and 3D art."
 	/>
-	<meta property="og:site_name" content="Rivai Amin Portfolio" />
+	<meta property="og:image" content="https://rivaiamin.github.io/rivaiamin_photo.jpg" />
+	<meta property="og:site_name" content="Riva'i Amin Portfolio" />
+	<meta property="og:locale" content="en_US" />
 
-	<!-- Twitter Card -->
+	<!-- Twitter Card (Default) -->
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:url" content="https://rivaiamin.github.io/" />
-	<meta name="twitter:title" content="Rivai Amin - Software Engineer & 3D Artist" />
+	<meta name="twitter:title" content="Riva'i Amin - Senior Full-Stack Engineer & 3D Artist" />
 	<meta
 		name="twitter:description"
-		content="Software Engineer and 3D Artist specializing in web development, 3D modeling, and creative digital solutions."
+		content="Senior Full-Stack Engineer with expertise in modern web technologies, cloud infrastructure, and 3D art."
 	/>
+	<meta name="twitter:image" content="https://rivaiamin.github.io/rivaiamin_photo.jpg" />
 
-	<!-- Canonical URL -->
-	<link rel="canonical" href="https://rivaiamin.github.io/" />
+	<!-- Additional SEO Meta Tags -->
+	<meta name="theme-color" content="#3b82f6" />
+	<meta name="mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="format-detection" content="telephone=no" />
 
 	<!-- Favicon -->
 	<link rel="icon" href={favicon} />
 
-	<!-- Fonts -->
+	<!-- Fonts (Preconnect for performance) -->
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
 	<link
