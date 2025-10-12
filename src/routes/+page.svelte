@@ -6,6 +6,18 @@
 		[];
 	let links: Array<{ href: string; label: string; icon: string }> = [];
 
+	function handleClick(href: string) {
+		// Internal route -> use goto for SPA navigation
+		if (href.startsWith('/')) {
+			goto(href);
+			return;
+		}
+
+		// External link -> open in a new tab safely
+		const newWindow = window.open(href, '_blank', 'noopener,noreferrer');
+		if (newWindow) newWindow.opener = null;
+	}
+
 	onMount(() => {
 		// Generate floating particles
 		particles = Array.from({ length: 20 }, () => ({
@@ -91,7 +103,8 @@
 		<div class="space-y-6 text-center">
 			{#each links as link}
 				<button
-					on:click={() => goto(link.href)}
+					type="button"
+					on:click={() => handleClick(link.href)}
 					class="menu-item block w-full text-white text-2xl md:text-3xl font-light tracking-wider px-8 py-2"
 				>
 					{link.label}
