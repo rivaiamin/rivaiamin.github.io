@@ -4,6 +4,10 @@ export interface ContactInfo {
 	location: string;
 	linkedin: string;
 	portfolio: string;
+	github: string;
+	sketchfab: string;
+	instagram: string;
+	twitter: string;
 }
 
 export interface Project {

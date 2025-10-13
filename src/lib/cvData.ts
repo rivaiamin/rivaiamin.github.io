@@ -12,7 +12,11 @@ export const cv: CV = {
  		phone: '+62 858 1414 0079',
  		location: 'Tangerang / Bogor, Indonesia',
  		linkedin: 'https://linkedin.com/in/rivaiamin',
- 		portfolio: 'https://rivaiamin.github.io'
+ 		portfolio: 'https://rivaiamin.github.io',
+ 		github: 'https://github.com/rivaiamin',
+ 		sketchfab: 'https://sketchfab.com/rivaiamin',
+ 		instagram: 'https://instagram.com/rivaiamin.tva',
+ 		twitter: '@rivaiamin'
  	},
 
  	// Unified skills section grouped by category for better ATS parsing
