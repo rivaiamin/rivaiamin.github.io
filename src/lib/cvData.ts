@@ -9,7 +9,7 @@ export const cv: CV = {
 
 	contacts: {
  		email: 'rivaiamin.id@gmail.com',
- 		phone: '+62 8986 849 527',
+ 		phone: '+62 858 1414 0079',
  		location: 'Tangerang / Bogor, Indonesia',
  		linkedin: 'https://linkedin.com/in/rivaiamin',
  		portfolio: 'https://rivaiamin.github.io'
@@ -398,8 +398,8 @@ export const profile: Profile = {
 			description: 'End-to-end web application development using modern technologies',
 			technologies: [
 				'PHP/Laravel',
-				'Vue.js',
 				'Svelte',
+				'Vue.js',
 				'Golang',
 				'Node.js',
 				'REST APIs',
@@ -412,7 +412,7 @@ export const profile: Profile = {
 		},
 		'AI & Machine Learning': {
 			description: 'Intelligent solutions powered by AI and machine learning',
-			technologies: ['TensorFlow', 'OpenNLP', 'Custom ML Models', 'AI-Assisted Development']
+			technologies: ['TensorFlow', 'OpenNLP', 'Python', 'Custom ML Models', 'AI-Assisted Development']
 		},
 		'Technical Leadership': {
 			description: 'Team management, code quality, and engineering best practices',
@@ -428,7 +428,8 @@ export const profile: Profile = {
 			achievements: [
 				'Improved system response time and scalability',
 				'Zero critical incidents maintained',
-				'Streamlined CI/CD pipelines'
+				'Streamlined CI/CD pipelines',
+                'Managed 1000+ concurrent users'
 			],
 			technologies: ['.NET Core', 'Golang', 'GCP', 'Docker', 'Azure DevOps']
 		},
@@ -449,7 +450,7 @@ export const profile: Profile = {
 			period: 'Jan 2020 – Aug 2023',
 			description: 'VP of Engineering leading cross-functional teams and implementing engineering excellence practices.',
 			achievements: [
-				'Led team of 15+ engineers',
+				'Led team of 5+ engineers',
 				'Reduced bugs by 40%',
 				'Increased delivery velocity by 35%',
 				'Managed 200+ concurrent users'
@@ -461,7 +462,7 @@ export const profile: Profile = {
 			period: 'Aug 2017 – Dec 2019',
 			description: 'High-volume payment processing systems handling millions of transactions.',
 			achievements: [
-				'Processed $10M+ monthly transactions',
+				'Processed IDR100M+ monthly transactions',
 				'Successful bank integrations',
 				'99.9% uptime maintained'
 			],
