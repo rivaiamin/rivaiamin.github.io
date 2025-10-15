@@ -215,13 +215,13 @@
 		<div class="accent-bar"></div>
 
 		<!-- Action Bar with Integrated Share Info -->
-		<div class="print:hidden absolute top-8 left-6 right-6 z-10">
+		<div class="print:hidden absolute top-4 sm:top-8 left-4 right-4 sm:left-6 sm:right-6 z-10">
 			<!-- Top row: Action buttons -->
-			<div class="flex justify-between items-center mb-3">
+			<div class="flex justify-between items-center gap-2 mb-3">
 				<button
 					id="back-btn"
 					type="button"
-					class="bg-white hover:bg-gray-50 border-2 border-gray-200 text-gray-700 text-sm font-semibold py-2.5 px-5 rounded-xl shadow-sm transition-all duration-200 flex items-center gap-2 hover:shadow-lg hover:border-gray-300"
+					class="bg-white hover:bg-gray-50 border-2 border-gray-200 text-gray-700 text-sm font-semibold py-2 px-3 rounded-xl shadow-sm transition-all duration-200 flex items-center justify-center gap-1 hover:shadow-lg hover:border-gray-300"
 					on:click={() => history.back()}
 					aria-label="Go back"
 				>
@@ -239,14 +239,14 @@
 							d="M15 19l-7-7 7-7"
 						/>
 					</svg>
-					Back
+					<span class="hidden sm:inline">Back</span>
 				</button>
 
-				<div class="flex items-center gap-3">
+				<div class="flex items-center gap-2">
 					<button
 						id="share-btn"
 						on:click={copyLink}
-						class="bg-white hover:bg-gray-50 border-2 border-blue-200 text-blue-700 text-sm font-semibold py-2.5 px-5 rounded-xl shadow-sm transition-all duration-200 flex items-center gap-2 hover:shadow-lg hover:border-blue-300"
+						class="bg-white hover:bg-gray-50 border-2 border-blue-200 text-blue-700 text-sm font-semibold py-2 px-3 rounded-xl shadow-sm transition-all duration-200 flex items-center justify-center gap-1 hover:shadow-lg hover:border-blue-300"
 						aria-label="Copy link"
 					>
 						<svg
@@ -263,13 +263,14 @@
 								d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"
 							/>
 						</svg>
-						Share Link
+						<span class="hidden sm:inline">Share Link</span>
+						<span class="sm:hidden">Share</span>
 					</button>
 
 					<button
 						id="download-btn"
 						on:click={downloadPDF}
-						class="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white text-sm font-semibold py-2.5 px-6 rounded-xl shadow-md transition-all duration-200 flex items-center gap-2 hover:shadow-xl hover:scale-105"
+						class="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white text-sm font-semibold py-2 px-3 rounded-xl shadow-md transition-all duration-200 flex items-center justify-center gap-1 hover:shadow-xl hover:scale-105"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -285,7 +286,8 @@
 								d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
 							/>
 						</svg>
-						Download PDF
+						<span class="hidden sm:inline">Download PDF</span>
+						<span class="sm:hidden">PDF</span>
 					</button>
 				</div>
 			</div>
@@ -293,12 +295,12 @@
 			<!-- Bottom row: Shareable link info -->
 			<div class="flex justify-center">
 				<div
-					class="bg-white/90 backdrop-blur-sm border border-blue-200 rounded-lg px-4 py-2 shadow-sm"
+					class="bg-white/90 backdrop-blur-sm border border-blue-200 rounded-lg px-3 sm:px-4 py-2 shadow-sm max-w-full"
 				>
-					<p class="text-xs text-gray-600 flex items-center gap-2">
+					<p class="text-xs text-gray-600 flex flex-col sm:flex-row items-center gap-1 sm:gap-2">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
-							class="h-3 w-3 text-blue-500"
+							class="h-3 w-3 text-blue-500 flex-shrink-0"
 							fill="none"
 							viewBox="0 0 24 24"
 							stroke="currentColor"
@@ -310,8 +312,8 @@
 								d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
 							/>
 						</svg>
-						<span class="font-medium text-blue-700">Always up-to-date:</span>
-						<span class="font-mono text-xs bg-blue-50 px-2 py-0.5 rounded border"
+						<span class="font-medium text-blue-700 text-center sm:text-left">Always up-to-date:</span>
+						<span class="font-mono text-xs bg-blue-50 px-2 py-0.5 rounded border break-all text-center"
 							>{cv.contacts.portfolio}/cv</span
 						>
 					</p>
@@ -319,10 +321,10 @@
 			</div>
 		</div>
 		<!-- Add space below the action bar for separation from content -->
-		<div class="print:hidden h-20"></div>
+		<div class="print:hidden h-32 sm:h-24"></div>
 
 		<!-- Content Container -->
-		<div class="px-8 sm:px-12 py-12 print:px-8 print:py-8">
+		<div class="px-4 sm:px-8 lg:px-12 py-8 sm:py-12 print:px-8 print:py-8">
 			<!-- Header -->
 			<header class="mb-10 print:mb-8 print-break">
 				<!-- Print-only online CV notice -->
@@ -333,18 +335,18 @@
 					</p>
 				</div>
 
-				<div class="flex items-start gap-8">
+				<div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-8">
 					<img
 						src={cv.photo}
 						alt={`${cv.name} - Professional Photo`}
-						class="w-32 h-32 rounded-2xl object-cover ring-4 ring-blue-200 shadow-xl flex-shrink-0"
+						class="w-24 h-24 sm:w-32 sm:h-32 rounded-2xl object-cover ring-4 ring-blue-200 shadow-xl flex-shrink-0"
 					/>
-					<div class="flex-1">
-						<h1 class="text-5xl font-extrabold text-gray-900 mb-3 tracking-tight leading-tight">
+					<div class="flex-1 text-center sm:text-left">
+						<h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-2 sm:mb-3 tracking-tight leading-tight">
 							{cv.name}
 						</h1>
-						<p class="text-2xl text-blue-700 font-bold mb-5">{cv.title}</p>
-						<div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5 text-sm text-gray-700">
+						<p class="text-lg sm:text-xl lg:text-2xl text-blue-700 font-bold mb-4 sm:mb-5">{cv.title}</p>
+						<div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm text-gray-700">
 							<div class="flex items-center gap-2">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -362,7 +364,7 @@
 								</svg>
 								<a
 									href={'mailto:' + cv.contacts.email}
-									class="hover:text-blue-700 transition-colors">{cv.contacts.email}</a
+									class="hover:text-blue-700 transition-colors break-all">{cv.contacts.email}</a
 								>
 							</div>
 							<div class="flex items-center gap-2">
@@ -427,7 +429,7 @@
 									href={cv.contacts.portfolio}
 									target="_blank"
 									rel="noopener"
-									class="hover:text-blue-700 transition-colors">{cv.contacts.portfolio}</a
+									class="hover:text-blue-700 transition-colors break-all">{cv.contacts.portfolio}</a
 								>
 							</div>
 							<!-- LinkedIn Profile Link -->

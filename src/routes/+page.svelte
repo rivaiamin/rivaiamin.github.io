@@ -89,12 +89,12 @@
 		links = [
 			{
 				href: '/cv',
-				label: 'VIEW CURRICULUM VITAE',
+				label: 'CURRICULUM VITAE',
 				icon: icons.fileLines
 			},
 			{
 				'href': '/profile',
-				'label': 'VIEW PROFILE',
+				'label': 'PROFILE',
 				'icon': icons.person
 			},
 			{
@@ -179,12 +179,12 @@
 		</div>
 
 		<!-- Main Menu -->
-		<div class="space-y-6 text-center">
+		<div class="space-y-2 text-center">
 			{#each links as link}
 				<button
 					type="button"
 					on:click={() => handleClick(link.href)}
-					class="menu-item block w-full text-white text-2xl md:text-3xl font-light tracking-wider px-8 py-2"
+					class="menu-item block w-full text-white font-light tracking-wider px-8 py-2"
 				>
 					{link.label}
 				</button>
