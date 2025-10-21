@@ -104,8 +104,8 @@ export const cv: CV = {
  			]
  		},
  		{
- 			company: 'Independent Contractor',
- 			role: 'Full-Stack Engineer & AI Specialist',
+ 			company: 'PT Radar Teknologi Komputer',
+ 			role: 'Lead Software Engineer',
  			period: 'Jul 2023 – Present',
  			bullets: [
  				'Develop enterprise-grade multi-tenancy CMS platform using FilamentPHP, serving multiple clients across various industries',
@@ -438,7 +438,7 @@ export const profile: Profile = {
 			technologies: ['.NET Core', 'Golang', 'GCP', 'Docker', 'Azure DevOps']
 		},
 		{
-			name: 'Independent Consulting',
+			name: 'AHSA Kreatif',
 			period: 'Jul 2023 – Present',
 			description: 'Custom enterprise solutions and AI-powered applications for diverse clients.',
 			achievements: [
