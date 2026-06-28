@@ -280,6 +280,7 @@
 			position: relative;
 			background: var(--bg);
 			color: var(--ink);
+			overflow-x: clip;
 			transition:
 				background-color 0.25s ease,
 				color 0.25s ease;
@@ -370,12 +371,14 @@
 		.container {
 			width: min(100%, 68rem);
 			margin-inline: auto;
-			padding-inline: 1.25rem;
+			padding-inline: max(1rem, env(safe-area-inset-left, 0px))
+				max(1rem, env(safe-area-inset-right, 0px));
 		}
 
 		@media (min-width: 768px) {
 			.container {
-				padding-inline: 2rem;
+				padding-inline: max(2rem, env(safe-area-inset-left, 0px))
+					max(2rem, env(safe-area-inset-right, 0px));
 			}
 		}
 
@@ -425,6 +428,71 @@
 		.dossier-link:focus-visible {
 			outline: 2px solid var(--accent);
 			outline-offset: 3px;
+		}
+
+		/* Mobile section nav */
+		.mobile-nav {
+			display: flex;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			z-index: 35;
+			background: color-mix(in srgb, var(--surface) 92%, transparent);
+			backdrop-filter: blur(12px);
+			-webkit-backdrop-filter: blur(12px);
+			border-top: 1px solid var(--line);
+			padding: 0.4rem 0.35rem calc(0.4rem + env(safe-area-inset-bottom, 0px));
+			gap: 0.15rem;
+		}
+
+		@media (min-width: 768px) {
+			.mobile-nav {
+				display: none;
+			}
+		}
+
+		.mobile-nav-link {
+			flex: 1;
+			min-width: 0;
+			min-height: 2.75rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-family: var(--font-mono);
+			font-size: 0.58rem;
+			letter-spacing: 0.04em;
+			text-transform: uppercase;
+			color: var(--faint);
+			text-decoration: none;
+			border-radius: var(--radius-sm);
+			padding: 0.35rem 0.2rem;
+			transition:
+				color 0.2s ease,
+				background 0.2s ease;
+		}
+
+		.mobile-nav-link:hover,
+		.mobile-nav-link:focus-visible {
+			color: var(--ink);
+		}
+
+		.mobile-nav-link.active {
+			color: var(--accent);
+			background: var(--accent-dim);
+		}
+
+		.mobile-nav-link:focus-visible {
+			outline: 2px solid var(--accent);
+			outline-offset: 1px;
+		}
+
+		@media (prefers-reduced-transparency: reduce) {
+			.mobile-nav {
+				background: var(--surface);
+				backdrop-filter: none;
+				-webkit-backdrop-filter: none;
+			}
 		}
 
 		/* Hero */
@@ -582,6 +650,83 @@
 			flex-wrap: wrap;
 			gap: 0.65rem;
 			margin-bottom: 2rem;
+		}
+
+		@media (max-width: 899px) {
+			.hero {
+				min-height: auto;
+				padding-block: 4.75rem 2rem;
+				align-items: start;
+			}
+
+			.hero-ambient {
+				width: 80vw;
+				height: 50vw;
+				right: -20%;
+				top: 2rem;
+			}
+
+			.hero-grid {
+				gap: 1.5rem;
+			}
+
+			.hero-visual {
+				order: -1;
+				justify-self: center;
+				width: min(72%, 14rem);
+				margin-right: 0;
+			}
+
+			.hero-bg-mark {
+				font-size: clamp(3.5rem, 24vw, 6rem);
+				left: -2vw;
+				bottom: auto;
+				top: 5.5rem;
+			}
+
+			.hero-role {
+				font-size: 0.62rem;
+				letter-spacing: 0.1em;
+				line-height: 1.5;
+				margin-bottom: 1rem;
+			}
+
+			.hero-title {
+				font-size: clamp(2rem, 9.5vw, 2.75rem);
+				margin-bottom: 1rem;
+			}
+
+			.hero-lead {
+				font-size: 1rem;
+				margin-bottom: 1.5rem;
+			}
+
+			.hero-actions {
+				margin-bottom: 0;
+			}
+
+			.hero-actions .btn-primary,
+			.hero-actions .btn-ghost {
+				flex: 1 1 calc(50% - 0.35rem);
+				min-height: 2.75rem;
+				padding-inline: 1rem;
+			}
+
+			.hero-topbar {
+				padding-block: 0.85rem;
+			}
+		}
+
+		@media (max-width: 380px) {
+			.back-link {
+				font-size: 0.6rem;
+				letter-spacing: 0.05em;
+			}
+
+			.theme-toggle {
+				padding: 0.4rem 0.55rem;
+				font-size: 0.62rem;
+			}
 		}
 
 		.btn-primary,
@@ -779,37 +924,42 @@
 		}
 
 		.metrics-inner {
-			display: flex;
-			overflow-x: auto;
-			scrollbar-width: none;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
 		}
 
-		.metrics-inner::-webkit-scrollbar {
-			display: none;
+		.metric {
+			padding: 1.25rem 1rem;
+			border-right: 1px solid var(--line);
+			border-bottom: 1px solid var(--line);
+		}
+
+		.metric:nth-child(2n) {
+			border-right: none;
+		}
+
+		.metric:nth-child(n + 3) {
+			border-bottom: none;
 		}
 
 		@media (min-width: 768px) {
 			.metrics-inner {
-				display: grid;
 				grid-template-columns: repeat(4, 1fr);
-				overflow: visible;
 			}
-		}
 
-		.metric {
-			flex: 0 0 42%;
-			padding: 1.75rem 1.5rem;
-			border-right: 1px solid var(--line);
-		}
-
-		@media (min-width: 768px) {
 			.metric {
-				flex: unset;
+				padding: 1.75rem 1.5rem;
+				border-bottom: none;
+				border-right: 1px solid var(--line);
 			}
-		}
 
-		.metric:last-child {
-			border-right: none;
+			.metric:nth-child(2n) {
+				border-right: 1px solid var(--line);
+			}
+
+			.metric:last-child {
+				border-right: none;
+			}
 		}
 
 		.metric-value {
@@ -835,23 +985,111 @@
 			border-bottom: 1px solid var(--line);
 		}
 
+		@media (max-width: 767px) {
+			.social-strip .social-row {
+				display: grid;
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+				gap: 0.4rem;
+			}
+
+			.social-strip .social-link {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				min-height: 2.5rem;
+			}
+
+			.social-strip .social-link:last-child:nth-child(odd) {
+				grid-column: 1 / -1;
+			}
+		}
+
 		/* Sections */
 		.section {
 			position: relative;
 			z-index: 1;
-			padding-block: 4.5rem 5rem;
-			scroll-margin-top: 2rem;
+			padding-block: 3rem 3.5rem;
+			scroll-margin-top: 1rem;
 		}
 
 		@media (min-width: 768px) {
 			.section {
 				padding-block: 6rem 6.5rem;
+				scroll-margin-top: 2rem;
 			}
 		}
 
 		.section-head {
 			margin-bottom: 3rem;
 			max-width: 40rem;
+		}
+
+		@media (max-width: 767px) {
+			.section-head {
+				margin-bottom: 2rem;
+			}
+
+			.section-title {
+				font-size: clamp(1.55rem, 6.5vw, 2rem);
+			}
+
+			.about-summary {
+				font-size: 1rem;
+				margin-bottom: 1.5rem;
+			}
+
+			.side-panel {
+				padding: 1.25rem;
+			}
+
+			.expertise-card {
+				padding: 1.35rem;
+				min-height: auto;
+			}
+
+			.work-item {
+				padding-block: 1.75rem;
+			}
+
+			.work-name {
+				font-size: 1.25rem;
+			}
+
+			.project-groups {
+				gap: 2.5rem;
+			}
+
+			.project-card-top {
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 0.35rem;
+			}
+
+			.project-tech {
+				white-space: normal;
+				padding-top: 0;
+			}
+
+			.testimonial {
+				padding: 1.35rem;
+			}
+
+			.contact-cell {
+				padding: 1.15rem 1.2rem;
+			}
+
+			.footer .social-row {
+				display: none;
+			}
+
+			.profile-page {
+				padding-bottom: calc(3.5rem + env(safe-area-inset-bottom, 0px));
+			}
+
+			.scroll-top {
+				right: 1rem;
+				bottom: calc(4.5rem + env(safe-area-inset-bottom, 0px));
+			}
 		}
 
 		.section-title {
@@ -1479,6 +1717,7 @@
 			.expertise-card,
 			.value-chip,
 			.theme-toggle,
+			.mobile-nav-link,
 			.profile-page,
 			:global(body) {
 				transition: none;
@@ -1804,4 +2043,16 @@
 	{#if showScrollTop}
 		<button class="scroll-top" onclick={scrollToTop} aria-label="Scroll to top">↑</button>
 	{/if}
+
+	<nav class="mobile-nav" aria-label="Page sections">
+		{#each navSections as section}
+			<a
+				href="#{section.id}"
+				class="mobile-nav-link"
+				class:active={activeSection === section.id}
+			>
+				{section.label}
+			</a>
+		{/each}
+	</nav>
 </div>
