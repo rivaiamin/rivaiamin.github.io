@@ -1,0 +1,6 @@
+{
+  "name": "Developer JRPG Status Portfolio",
+  "description": "A high-fidelity, interactive professional developer portfolio designed as a futuristic JRPG character status screen, complete with dynamic stats, skill trees, quest logs, equipment grids, retro synthesizers, and terminal commands.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
