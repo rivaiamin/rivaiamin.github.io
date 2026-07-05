@@ -1,0 +1,6 @@
+{
+	"yaml.schemaStore.enable": false,
+	"yaml.schemas": {
+		"./.vscode/schemas/github-workflow.json": ".github/workflows/*.{yml,yaml}"
+	}
+}
