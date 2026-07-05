@@ -10,4 +10,9 @@ declare global {
 	}
 }
 
+declare module '*.glb?url' {
+	const url: string;
+	export default url;
+}
+
 export {};
